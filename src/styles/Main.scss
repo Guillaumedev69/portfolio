@@ -1,0 +1,347 @@
+@import "./Global.scss";
+.main {
+  cursor: $cursortheme;
+  display: flex;
+  flex-direction: column;
+  background-color: $backgrd;
+  font-family: $font-first;
+  .sectionIntro {
+    background: rgb(5, 15, 15);
+    background: -moz-linear-gradient(
+      158deg,
+      rgba(5, 15, 15, 1) 49%,
+      rgba(0, 192, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      158deg,
+      rgba(5, 15, 15, 1) 49%,
+      rgba(0, 192, 255, 1) 100%
+    );
+    background: linear-gradient(
+      158deg,
+      rgba(5, 15, 15, 1) 49%,
+      rgba(0, 192, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050f0f",endColorstr="#00c0ff",GradientType=1);
+    box-shadow: 0rem 1rem 2rem #00c0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    .pIntro {
+      max-width: 1440px;
+      font-family: $font-second;
+      font-size: 3rem;
+      text-align: center;
+      color: $text-white;
+    }
+  }
+  .sectionInfo {
+    padding-top: $padding-top-link;
+    color: $text-white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .sectionInfoContent {
+      color: $text-white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .aboutTitle {
+      @include main-title;
+    }
+    .containerTitlePBtn {
+      display: flex;
+      flex-direction: column;
+      .containerTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0.5rem;
+        .titleFirstInfo {
+          font-size: 2rem;
+          margin: 0;
+        }
+        .titleSecondInfo {
+          color: $text-blue;
+          font-size: 1.5rem;
+          margin: 0;
+        }
+      }
+      .pInfo {
+        padding-top: 1rem;
+        font-size: 1.3rem;
+        font-family: $font-first;
+        max-width: 50rem;
+        text-align: justify;
+      }
+    }
+    .imgInfo {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+  .sectionProject {
+    padding-top: $padding-top-link;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    .projectTitle {
+      @include main-title;
+    }
+  }
+  .sectionSkills {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      margin-top: 10rem;
+      @include main-title;
+    }
+  }
+  .sectionContact {
+    padding-top: $padding-top-link;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    p{
+      text-align: center;
+      color: red;
+    }
+    &__title {
+      @include main-title;
+    }
+    a{
+      color: $backgrd;
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  .main {
+    .sectionIntro {
+      padding-top: 20rem;
+      padding-bottom: 5rem;
+      .pIntro {
+        font-size: 2rem;
+      }
+    }
+    .sectionInfo {
+      padding-top: 14rem;
+      .sectionInfoContent {
+        flex-direction: column;
+        align-items: center;
+      }
+      .containerTitlePBtn {
+        .containerTitle {
+          align-items: center;
+          .titleFirstInfo {
+            font-size: 1.8rem;
+          }
+          .titleSecondInfo {
+            font-size: 1.4rem;
+          }
+        }
+        .pInfo {
+          font-size: 1.1rem;
+          text-align: center;
+        }
+      }
+      .imgInfo {
+        margin: 2rem 0;
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+    .sectionProject {
+      padding-top: 14rem;
+    }
+    .sectionSkills {
+      &__title {
+        margin-top: 16.5rem;
+      }
+    }
+    .sectionContact {
+      padding-top: $padding-top-link;
+      &__title {
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+
+/* Small devices (landscape phones, ≥576px) */
+@media (min-width: 576px) {
+  .main {
+    .sectionIntro {
+      padding-top: 20rem;
+      .pIntro {
+        font-size: 2rem;
+      }
+    }
+    .sectionInfo {
+      padding-top: 14rem;
+      .sectionInfoContent {
+        flex-direction: column;
+        align-items: center;
+      }
+      .containerTitlePBtn {
+        .containerTitle {
+          align-items: center;
+        }
+      }
+      .imgInfo {
+        margin: 2rem 0;
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+    .sectionProject {
+      padding-top: 14rem;
+    }
+    .sectionSkills {
+      &__title {
+        margin-top: 16.5rem;
+      }
+    }
+    .sectionContact {
+      padding-top: $padding-top-link;
+      &__title {
+        margin-top: 10.25rem;
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+  .main {
+    .sectionIntro {
+      padding-top: 10rem;
+      .pIntro {
+        font-size: 3rem;
+        text-align: center;
+        color: $text-white;
+      }
+    }
+    .sectionInfo {
+      padding-top: $padding-top-link;
+      .sectionInfoContent {
+        color: $text-white;
+        display: flex;
+        flex-direction: column;
+      }
+      .aboutTitle {
+        @include main-title;
+      }
+      .containerTitlePBtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .containerTitle {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+          .titleFirstInfo {
+            font-size: 2rem;
+            margin: 0;
+          }
+          .titleSecondInfo {
+            color: $text-blue;
+            font-size: 1.5rem;
+            margin: 0;
+          }
+        }
+        .pInfo {
+          padding-top: 1rem;
+          font-size: 1.3rem;
+          font-family: $font-first;
+          max-width: 50rem;
+        }
+      }
+      .imgInfo {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+    .sectionProject {
+      padding-top: $padding-top-link;
+    }
+    .sectionSkills {
+      padding-top: 8.75rem;
+      &__title {
+        margin: 0;
+      }
+    }
+    .sectionContact {
+      padding-top: 8.75rem;
+      &__title {
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+  .main {
+    .sectionInfo {
+      .aboutTitle {
+        @include main-title;
+      }
+      .containerTitlePBtn {
+        .containerTitle {
+          .titleFirstInfo {
+            font-size: 2.2rem;
+          }
+          .titleSecondInfo {
+            font-size: 1.7rem;
+          }
+        }
+        .pInfo {
+          font-size: 1.5rem;
+          max-width: 80%;
+        }
+      }
+      .imgInfo {
+        width: 25rem;
+        height: 25rem;
+      }
+    }
+    .sectionProject {
+      padding-top: $padding-top-link;
+      .projectTitle {
+        @include main-title;
+      }
+    }
+    .sectionSkills {
+      &__title {
+        @include main-title;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .sectionContact {
+      &__title {
+        @include main-title;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  
+}

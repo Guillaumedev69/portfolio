@@ -1,0 +1,191 @@
+@import "./Global.scss";
+header {
+  position: fixed;
+  z-index: 3;
+  font-family: $font-first;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: $backgrd;
+  gap: 1.25rem;
+  .logo-header {
+    cursor: $cursortheme;
+    padding: 0.5rem 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      color: $text-white;
+      margin: 0 0 0.5rem 0;
+      font-size: 2.2rem;
+    }
+    p {
+      text-align: center;
+      color: #00c0ff;
+      margin: 0;
+      font-size: 1.3rem;
+    }
+  }
+  .nav {
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+    button{
+      background-color: $backgrd;
+      border: none;
+      .burgerIcon{
+        color: #00c0ff;
+        background-color: $backgrd;
+        font-size: 2rem;
+      }
+      .burgerIcon:active{
+        position: relative;
+        bottom: 1px;
+      }
+      .close:hover{
+        color: red;
+      }
+    }
+    &__container-link-page {
+      font-family: $font-second;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 1rem;
+      .navLink {
+        color: $text-white;
+        text-decoration: none;
+      }
+    }
+    .container-link-url {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 1rem;
+      .btnAccess {
+        display: none;
+        font-family: $font-access;
+      }
+    }
+    .navLink:hover {
+      color: $text-blue;
+      fill: #00c0ff;
+    }
+  }
+}
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  header {
+    padding-top: 0.5rem;
+    font-family: $font-first;
+    flex-direction: column;
+    .logo-header {
+      padding: 0;
+      h1 {
+        text-align: center;
+        font-size: 1.75rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+    .nav {
+      flex-direction: column;
+      padding: 0;
+      gap: 1rem;
+      &__container-link-page {
+        padding: 0;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .container-link-url {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* Small devices (landscape phones, ≥576px) */
+@media (min-width: 576px) {
+  header {
+    padding-top: 0.5rem;
+    font-family: $font-first;
+    display: flex;
+    flex-direction: column;
+    .logo-header {
+      padding: 0;
+      h1 {
+        text-align: center;
+      }
+    }
+    .nav {
+      flex-direction: column;
+      padding: 0;
+      gap: 1rem;
+      &__container-link-page {
+        padding: 0;
+        font-size: 1.6rem;
+        gap: 2rem;
+        margin-bottom: 0;
+      }
+      .container-link-url {
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+  header {
+    justify-content: space-between;
+    flex-direction: row;
+    .logo-header {
+      padding: 0.5rem 0 0 0.5rem;
+    }
+    .nav {
+      flex-direction: row;
+      gap: 4rem;
+      padding: 1rem;
+      &__container-link-page {
+        margin: 0;
+        gap: 1rem;
+        .navLink {
+          text-wrap: nowrap;
+        }
+      }
+      .container-link-url {
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) {
+  header {
+    .logo-header {
+      padding: 0.5rem 0 0 1rem;
+    }
+    .nav {
+      gap: 10rem;
+    }
+  }
+}

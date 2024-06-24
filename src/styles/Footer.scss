@@ -1,0 +1,48 @@
+@import "./Global.scss";
+footer {
+  color: $text-white;
+  font-family: $font-first;
+  text-align: center;
+  box-shadow: 0px -10px 40px 10px $text-blue;
+  padding: 2.5rem 0 2.5rem 0;
+  border-top: 0.5px solid $text-blue;
+  p{
+    margin: 0;
+  }
+  .btnSign{
+    margin-top: 1rem;
+    color: $backgrd;
+  }
+  .btnSign:hover{
+    margin-top: 1rem;
+    color: $text-blue;
+  }
+}
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  
+}
+
+/* Small devices (landscape phones, ≥576px) */
+@media (min-width: 576px) {
+  
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) {
+  
+}
+
+@media (min-width: 1440px) {
+  
+}

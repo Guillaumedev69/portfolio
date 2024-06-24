@@ -1,0 +1,89 @@
+@import "./Global.scss";
+.btnContact {
+  margin-top: 1rem;
+  background-color: $text-blue;
+  border-radius: 28px;
+  border: 1px solid #000;
+  cursor: pointer;
+  color: $backgrd;
+  font-family: $font-first;
+  font-size: 1.25rem;
+  padding: 1rem;
+  text-decoration: none;
+  max-width: 20rem;
+  &__icon {
+    width: 2rem;
+    height: 1.75rem;
+  }
+  &__bulle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: $text-blue;
+    border-radius: 3rem;
+    border: 1px solid #000;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 8rem;
+    .close:hover{
+      color: red;
+    }
+    button{
+      border: none;
+      background: none;
+    }
+    a {
+      text-decoration: none;
+      color: $backgrd;
+    }
+
+    a:hover {
+      color: $text-white;
+    }
+    a:active {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+.containerBulle {
+  display: flex;
+  justify-content: center;
+}
+.btnContact:hover {
+  background-color: $text-white;
+  color: $text-blue;
+}
+.btnContact:active {
+  position: relative;
+  top: 1px;
+}
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, ≥576px) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+  .btnContact {
+    &__icon {
+      height: 1.5rem;
+    }
+  }
+}
+
+/* Extra large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+}

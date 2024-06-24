@@ -1,0 +1,10 @@
+@import "./Global.scss";
+.NotFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  p {
+    margin: 20rem auto 20rem auto;
+    color: $text-white;
+  }
+}

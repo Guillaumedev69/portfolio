@@ -1,0 +1,166 @@
+@import "./Global.scss";
+.formContact {
+  background-color: $backgrd;
+  border: 1px solid $text-blue;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px 10px $text-blue;
+  padding: 1rem;
+  color: $text-white;
+  font-family: $font-second;
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 30rem;
+  margin-bottom: 0.5rem;
+
+  label {
+    text-decoration: underline $text-blue;
+  }
+  &__btn {
+    background-color: $text-blue;
+    border-radius: 28px;
+    border: 1px solid #000;
+    display: none;
+    cursor: pointer;
+    color: $backgrd;
+    font-family: $font-first;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    padding: 0.25rem;
+    text-decoration: none;
+    width: 100%;
+    max-width: 10rem;
+  }
+
+  &__btn:active {
+    position: relative;
+    top: 1px;
+  }
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  .nameContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    &__lastname {
+      @include div-label-form;
+      input {
+        margin-top: 0.25rem;
+        height: $height-input;
+        font-size: $font-size-placeholder;
+        border: none;
+        border-radius: 0.23rem;
+      }
+    }
+    &__firstname {
+      @include div-label-form;
+      input {
+        margin-top: 0.25rem;
+        border: none;
+        border-radius: 0.23rem;
+        height: $height-input;
+        font-size: $font-size-placeholder;
+      }
+    }
+  }
+
+  &__email {
+    @include div-label-form;
+    input {
+      margin-top: 0.25rem;
+      border: none;
+      border-radius: 0.23rem;
+      height: $height-input;
+      font-size: $font-size-placeholder;
+    }
+  }
+  &__file {
+    @include div-label-form;
+    input {
+      margin-top: 0.25rem;
+      border: none;
+      border-radius: 0.23rem;
+    }
+  }
+  &__msg {
+    @include div-label-form;
+    textarea {
+      margin-top: 0.25rem;
+      border: none;
+      border-radius: 0.23rem;
+      height: 5rem;
+      font-size: $font-size-placeholder;
+    }
+  }
+}
+.waitForm{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 2rem;
+.btnContact{
+  &__bulle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+  &__formMessage{
+    color: red;
+  }
+}
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  .formContact {
+    gap: 1rem;
+    width: 80%;
+    margin-bottom: 10rem;
+    label {
+      font-size: 1.4rem;
+      text-decoration: underline $text-blue;
+    }
+    &__btn:active {
+      top: 2px;
+    }
+  }
+
+  
+  .infoContainer {
+    .nameContainer {
+      flex-direction: column;
+    }
+    &__msg {
+      textarea {
+        height: 6rem;
+      }
+    }
+  }
+}
+
+/* Small devices (landscape phones, ≥576px) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+}
