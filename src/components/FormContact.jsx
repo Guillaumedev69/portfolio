@@ -44,7 +44,7 @@ const ContactForm = () => {
           </div>
           <div className="infoContainer__file">
             <label>Documents:</label>
-            <input type="file" name="user_file" />
+            <input type="file" aria-labelledby="ajout_fichier" name="user_file" />
           </div>
         </div>
         <div className="infoContainer__msg">

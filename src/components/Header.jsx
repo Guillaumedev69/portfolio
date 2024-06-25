@@ -30,7 +30,7 @@ const Header = () => {
       </div>
       <nav className="nav">
         {!isBtnInvisible && (
-          <button className="nav__btnBurger" onClick={handleButtonClick}>
+          <button className="nav__btnBurger" id="buttonMenu" title="Menu" onClick={handleButtonClick}>
             <FontAwesomeIcon icon={faBars} className="burgerIcon" />
           </button>
         )}
