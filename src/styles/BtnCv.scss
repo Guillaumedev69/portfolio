@@ -1,0 +1,18 @@
+@import "./Global.scss";
+.btnCv {
+  margin-top: 0.5rem;
+  button {
+    cursor: pointer;
+    color: $text-blue;
+    border: none;
+    background-color: $backgrd;
+    text-decoration: underline;
+    font-family: $font-second;
+    font-size: 1.1rem;
+  }
+  button:active{
+    color: $text-white;
+    position: relative;
+    top: 1px;
+  }
+}
