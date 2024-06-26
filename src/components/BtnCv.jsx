@@ -1,11 +1,12 @@
 import "../styles/BtnCv.scss";
+import Cv from "../../public/destree_guillaume_cv.pdf"
 
 const BtnCv = () => {
   return (
     <div className="btnCv">
       <a
-        href="../../public/destree_guillaume_cv.pdf"
-        download
+        href={Cv}
+        download={Cv}
       >
         Téléchargez mon CV !
       </a>
