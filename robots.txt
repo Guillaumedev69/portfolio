@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://destreeguillaume-devstree.vercel.app/sitemap.xml
