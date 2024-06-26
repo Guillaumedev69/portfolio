@@ -2,6 +2,7 @@
   "rewrites": [
     { "source": "/(.*).pdf", "destination": "/$1.pdf" },
     { "source": "/(.*)", "destination": "/" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/robots.txt", "destination": "/path/to/your/robots.txt" }
   ]
 }
