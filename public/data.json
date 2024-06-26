@@ -1,0 +1,42 @@
+[
+    {
+      "id": "c67ab8a7",
+      "title": "Kasa - Location immobilière",
+      "coverUrl": "@/src/assets/imgKasa.webp",
+      "description":"Mon projet sur l'application web Kasa était l'intégration d'une maquette Figma en React & SASS. J'ai dû créer et implémenter plusieurs pages et les lier          grâce à React-Router-Dom.",
+      "skillsUrl":[
+        "@/src/assets/icons/sass-icon.svg",
+        "@/src/assets/icons/react-icon.svg"
+        ],
+      "githubUrl":"https://github.com/Guillaumedev69/Kasa-Fr"
+    },
+    {
+        "id": "c67ab8a7",
+        "title": "Sophie Bluel - Portfolio en ligne",
+        "coverUrl": "@/src/assets/imgSophieBluel.webp" ,
+        "description": "Le sujet principal de ce projet était l&apos;intégration d&apos;une maquette Figma avec JavaScript & CSS. Dans la maquette j&apos;avais des modales à créer avec une liaison vers l&apos;API CRUD pour que le client puisse Ajouter/Afficher/Modifier/Supprimer des projets de sa galerie.",
+        "skillsUrl":[
+            "@/src/assets/icons/css-icon.svg",
+            "@/src/assets/icons/javascript-icon.svg"
+            ],
+        "githubUrl":"https://github.com/Guillaumedev69/Portfolio_Sophie_Bluel"
+      },
+      {
+        "id": "c67ab8a7",
+        "title": "Booki - Agence de voyage",
+        "coverUrl": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+        "description": "Booki étant mon premier projet je devais integrer une maquette figma en utilisant uniquement HTML et CSS.",
+        "skillsUrl":["@/src/assets/icons/html-icon.svg","@/src/assets/icons/css-icon.svg"],
+        "githubUrl":"https://github.com/Guillaumedev69/Booki_integration"
+      },
+      {
+        "id": "c67ab8a7",
+        "title": "Mon Vieux Grimoire - librairie",
+        "coverUrl": "@/src/assets/imgMonVieuxGrimoire.webp", 
+        "description": "on Vieux Grimoire et une application web en React qui permet aux utilisateurs de s&apos;inscrire et/ou de se connecter pour ajouter des livres ne ligne et de les noter. Ma mission était de créer la partie serveur avec une base de données pour que les clients puissent Ajouter/Afficher/Modifier/supprimer les livres ajoutées.",
+        "skillsUrl":["@/src/assets/icons/node-icon.svg", "@/src/assets/icons/mongo-icon.svg"
+    ],
+        "githubUrl":"https://github.com/Guillaumedev69/Mon-Vieux-Grimoire"
+      }
+
+  ]

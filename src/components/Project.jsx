@@ -37,7 +37,7 @@ const Project = () => {
             />
             <img className="cardsIcons" src={IconSass} alt="logo de Sass" />
             <a href="https://github.com/Guillaumedev69/Kasa-Fr" target="blank">
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Voir plus
             </a>
           </div>
         </FlippingCardBack>
@@ -47,7 +47,7 @@ const Project = () => {
             src={ImgKasa}
             alt="capture d'écran du projet Kasa"
           />
-          <h4 className="cards__Title">Kasa - Location immobilière</h4>
+          <h3 className="cards__Title">Kasa - Location immobilière</h3>
         </FlippingCardFront>
       </FlippingCard>
       <FlippingCard className="cards">
@@ -74,7 +74,7 @@ const Project = () => {
               href="https://github.com/Guillaumedev69/Portfolio_Sophie_Bluel"
               target="blank"
             >
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Voir plus
             </a>
           </div>
         </FlippingCardBack>
@@ -84,7 +84,7 @@ const Project = () => {
             src={ImgSophieBluel}
             alt="capture d'écran du projet Sophie Bluel"
           />
-          <h4 className="cards__Title">Sophie Bluel - Portfolio en ligne</h4>
+          <h3 className="cards__Title">Sophie Bluel - Portfolio en ligne</h3>
         </FlippingCardFront>
       </FlippingCard>
       <FlippingCard className="cards">
@@ -108,7 +108,7 @@ const Project = () => {
               href="https://github.com/Guillaumedev69/Booki_integration"
               target="blank"
             >
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Voir plus
             </a>
           </div>
         </FlippingCardBack>
@@ -118,7 +118,7 @@ const Project = () => {
             src={ImgBooki}
             alt="capture d'écran du projet Booki"
           />
-          <h4 className="cards__Title">Booki - Agence de voyage</h4>
+          <h3 className="cards__Title">Booki - Agence de voyage</h3>
         </FlippingCardFront>
       </FlippingCard>
       <FlippingCard className="cards">
@@ -147,7 +147,7 @@ const Project = () => {
               href="https://github.com/Guillaumedev69/Mon-Vieux-Grimoire"
               target="blank"
             >
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Voir plus
             </a>
           </div>
         </FlippingCardBack>
@@ -157,7 +157,7 @@ const Project = () => {
             src={ImgMonVieuxGrimoire}
             alt="capture d'écran du projet Mon Vieux Grimoire"
           />
-          <h4 className="cards__Title">Mon Vieux Grimoire - librairie</h4>
+          <h3 className="cards__Title">Mon Vieux Grimoire - librairie</h3>
         </FlippingCardFront>
       </FlippingCard>
     </div>

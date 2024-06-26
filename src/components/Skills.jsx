@@ -19,7 +19,7 @@ const Skills = () => {
               src={IconReact}
               alt="logo du framework REACT"
             />
-            <h5 className="skillsContainer__title">React</h5>
+            <h3 className="skillsContainer__title">React</h3>
           </div>
           <div className="skillsContainer__iconsTitleContain">
             <img
@@ -27,7 +27,7 @@ const Skills = () => {
               src={IconSass}
               alt="logo de Sass"
             />
-            <h5 className="skillsContainer__title">Sass</h5>
+            <h3 className="skillsContainer__title">Sass</h3>
           </div>
           <div className="skillsContainer__iconsTitleContain">
             <img
@@ -35,7 +35,7 @@ const Skills = () => {
               src={IconMongo}
               alt="logo de la base de données MongoDB"
             />
-            <h5 className="skillsContainer__title">MongoDB</h5>
+            <h3 className="skillsContainer__title">MongoDB</h3>
           </div>
           <div className="skillsContainer__iconsTitleContain">
             <img
@@ -43,7 +43,7 @@ const Skills = () => {
               src={IconNode}
               alt="logo du langage Node.js"
             />
-            <h5 className="skillsContainer__title">Node.js</h5>
+            <h3 className="skillsContainer__title">Node.js</h3>
           </div>
           <div className="skillsContainer__iconsTitleContain">
             {" "}
@@ -52,7 +52,7 @@ const Skills = () => {
               src={IconJavascript}
               alt="logo du langage JavaScript"
             />
-            <h5 className="skillsContainer__title">JavaScript</h5>
+            <h3 className="skillsContainer__title">JavaScript</h3>
           </div>
           <div className="skillsContainer__iconsTitleContain">
             {" "}
@@ -61,7 +61,7 @@ const Skills = () => {
               src={IconCss}
               alt="logo du langage de style CSS"
             />
-            <h5 className="skillsContainer__title">CSS 3</h5>
+            <h3 className="skillsContainer__title">CSS 3</h3>
           </div>
           <div className="skillsContainer__iconsTitleContain">
             <img
@@ -69,7 +69,7 @@ const Skills = () => {
               src={IconHtml}
               alt="logo du langage HTML"
             />
-            <h5 className="skillsContainer__title">HTML 5</h5>
+            <h3 className="skillsContainer__title">HTML 5</h3>
           </div>
           <div className="skillsContainer__iconsTitleContain">
             <img
@@ -77,7 +77,7 @@ const Skills = () => {
               src={IconFigma}
               alt="icone du logiciel de design Figma"
             />
-            <h5 className="skillsContainer__title">Figma</h5>
+            <h3 className="skillsContainer__title">Figma</h3>
           </div>
         </div>
         </div>

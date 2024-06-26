@@ -74,7 +74,7 @@ const Main = () => {
         </p>
         <ContactForm />
         <a href="#main">
-          <FontAwesomeIcon icon={faAnglesUp} />
+          <FontAwesomeIcon icon={faAnglesUp} title="up"/> 
         </a>
       </section>
     </main>

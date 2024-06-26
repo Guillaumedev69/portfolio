@@ -8,7 +8,7 @@ const Footer = () => {
         <footer>
             <p>&copy; 2024, DEV_STRÉE</p>
             <Link to="/auth" >
-            <FontAwesomeIcon className="btnSign" icon={faUser} />
+            <FontAwesomeIcon className="btnSign" icon={faUser} title="connexion"/>
             </Link>
         </footer>
     );
