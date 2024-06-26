@@ -5,7 +5,7 @@ const BtnCv = () => {
     <div className="btnCv">
       <a
         href="../../public/destree_guillaume_cv.pdf"
-        download="destree_guillaume_cv.pdf"
+        download
       >
         Téléchargez mon CV !
       </a>
