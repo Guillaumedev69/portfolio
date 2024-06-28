@@ -1,4 +1,4 @@
-
+import "../styles/FormAddProject.scss"
 
 const FormAddProject = () => {
   return (

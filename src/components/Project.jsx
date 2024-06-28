@@ -27,7 +27,11 @@ const Project = () => {
             Mon projet sur l&apos;application web Kasa était l&apos;intégration
             d&apos;une maquette Figma en React & SASS.
             <br /> J&apos;ai dû créer et implémenter plusieurs pages et les lier
-            grâce à React-Router-Dom.
+            grâce à React-Router-Dom, créer des composant réutilisables.
+            <br />
+            Le plus difficile à gérer c&apos;était l&apos;affichage de la page
+            404 pour une erreure d&apos;ID de cards et de créer des style
+            different pour le même composant comme les collaspes.
           </p>
           <div className="cardsIconsContainer">
             <img
@@ -58,6 +62,9 @@ const Project = () => {
             <br /> Dans la maquette j&apos;avais des modales à créer avec une
             liaison vers l&apos;API CRUD pour que le client puisse
             Ajouter/Afficher/Modifier/Supprimer des projets de sa galerie.
+            <br />
+            Ce m&apos;a donné quelques difficultées pour mes premiers appels API
+            avce Fetch et pour la création de modale.
           </p>
           <div className="cardsIconsContainer">
             <img
@@ -92,6 +99,10 @@ const Project = () => {
           <p className="cards__P">
             Booki étant mon premier projet je devais integrer une maquette figma
             en utilisant uniquement HTML et CSS.
+            <br />
+            Mes difficultées sur ce projet ont été le responsive design et les
+            petits details de la maquette qui étaient différent suivant les
+            tailles d&apos;écrans.
           </p>
           <div className="cardsIconsContainer">
             <img
@@ -129,8 +140,11 @@ const Project = () => {
             des livres ne ligne et de les noter.
             <br />
             Ma mission était de créer la partie serveur avec une base de données
-            pour que les clients puissent Ajouter/Afficher/Modifier/supprimer
-            les livres ajoutées.
+            (CRUD) pour que les clients puissent
+            Ajouter/Afficher/Modifier/supprimer les livres ajoutées.
+            <br />
+            Pour moi les points les plus compliqué ont été de gérer l&apos;ajout
+            et le traitement des images avec multer et Sharp.
           </p>
           <div className="cardsIconsContainer">
             <img
