@@ -1,29 +1,27 @@
 @import "./Global.scss";
 .main {
+  background: rgb(5, 15, 15);
+  background: -moz-linear-gradient(
+    110deg,
+    rgba(5, 15, 15, 1) 30%,
+    rgba(0, 192, 255, 1) 130%
+  );
+  background: -webkit-linear-gradient(
+    110deg,
+    rgba(5, 15, 15, 1) 30%,
+    rgba(0, 192, 255, 1) 130%
+  );
+  background: linear-gradient(
+    110deg,
+    rgba(5, 15, 15, 1) 30%,
+    rgba(0, 192, 255, 1) 130%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050f0f",endColorstr="#00c0ff",GradientType=1);
   cursor: $cursortheme;
   display: flex;
   flex-direction: column;
-  background-color: $backgrd;
   font-family: $font-first;
   .sectionIntro {
-    background: rgb(5, 15, 15);
-    background: -moz-linear-gradient(
-      158deg,
-      rgba(5, 15, 15, 1) 49%,
-      rgba(0, 192, 255, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      158deg,
-      rgba(5, 15, 15, 1) 49%,
-      rgba(0, 192, 255, 1) 100%
-    );
-    background: linear-gradient(
-      158deg,
-      rgba(5, 15, 15, 1) 49%,
-      rgba(0, 192, 255, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050f0f",endColorstr="#00c0ff",GradientType=1);
-    box-shadow: 0rem 1rem 2rem #00c0ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,15 +108,15 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    p{
+    p {
       text-align: center;
       color: red;
     }
     &__title {
       @include main-title;
     }
-    a{
-      color: $backgrd;
+    a {
+      color: $text-white;
       font-size: 2rem;
     }
   }
@@ -340,5 +338,4 @@
       }
     }
   }
-  
 }

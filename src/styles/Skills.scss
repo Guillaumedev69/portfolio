@@ -2,9 +2,10 @@
 
 .skillsContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 3rem;
+  margin-top: 2rem;
 
   &__iconsTitleContain {
     position: relative;
@@ -12,22 +13,57 @@
     flex-direction: column;
     align-items: center;
     top: 1rem;
-    transition: all 0.5s; 
+    animation: bounce 2s infinite ease-in-out;
   }
 
   &__icons {
     width: 6rem;
     height: 7rem;
   }
+  &__iconsTitleContain:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  &__iconsTitleContain:nth-child(2) {
+    animation-delay: 0.4s;
+  }
 
-  &__iconsTitleContain:hover {
-    top: 0;
+  &__iconsTitleContain:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  &__iconsTitleContain:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+
+  &__iconsTitleContain:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+  &__iconsTitleContain:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+
+  &__iconsTitleContain:nth-child(7) {
+    animation-delay: 1.4s;
+  }
+
+  &__iconsTitleContain:nth-child(8) {
+    animation-delay: 1.6s;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0px);
     }
-
+    50% {
+      transform: translateY(-40px);
+    }
+  }
   &__title {
-    font-size: 1.5rem;
     color: $text-white;
-  } 
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -47,12 +83,12 @@
 
     &__iconsTitleContain:hover {
       bottom: 1rem;
-    &__title {
-      margin: 0;
-      font-size: 1.1rem;
-      color: $text-white;
+      &__title {
+        margin: 0;
+        font-size: 1.1rem;
+        color: $text-white;
+      }
     }
-  }
   }
 }
 
@@ -78,13 +114,10 @@
 }
 
 @media (min-width: 992px) {
-
 }
 
 @media (min-width: 1200px) {
-
 }
 
 @media (min-width: 1440px) {
-
 }

@@ -1,12 +1,13 @@
 @import "./Global.scss";
 header {
   position: fixed;
-  z-index: 3;
+  z-index: 1;
   font-family: $font-first;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  box-shadow: 0rem 1rem 1rem 0.5rem $backgrd;
   background: $backgrd;
   gap: 1.25rem;
   .logo-header {
@@ -30,25 +31,26 @@ header {
     }
   }
   .nav {
+    left: 50%;
     padding-right: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     gap: 10rem;
-    button{
+    button {
       background-color: $backgrd;
       border: none;
-      .burgerIcon{
+      .burgerIcon {
         color: #00c0ff;
         background-color: $backgrd;
         font-size: 2rem;
       }
-      .burgerIcon:active{
+      .burgerIcon:active {
         position: relative;
         bottom: 1px;
       }
-      .close:hover{
+      .close:hover {
         color: red;
       }
     }
@@ -93,7 +95,7 @@ header {
         text-align: center;
         font-size: 1.75rem;
       }
-      p{
+      p {
         font-size: 1rem;
       }
     }
