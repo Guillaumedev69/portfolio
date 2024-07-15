@@ -37,9 +37,6 @@ const Header = () => {
 
         {isBulleVisible && (
           <>
-            <button onClick={handleButtonClick}>
-              <FontAwesomeIcon icon={faXmark} className="burgerIcon close" />
-            </button>
             <ul className="nav__container-link-page">
               <a href="/#about" className="navLink">
                 <li>À propos</li>
@@ -101,6 +98,9 @@ const Header = () => {
                 <button>Access</button>
               </li>
             </ul>
+            <button onClick={handleButtonClick}>
+              <FontAwesomeIcon icon={faXmark} className="burgerIcon close" />
+            </button>
           </>
         )}
       </nav>
