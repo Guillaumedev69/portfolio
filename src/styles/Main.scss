@@ -128,11 +128,12 @@
     .sectionIntro {
       padding-bottom: 5rem;
       .pIntro {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        padding: 0.2rem;
       }
     }
     .sectionInfo {
-      padding-top: 14rem;
+      padding-top: 10rem;
       .sectionInfoContent {
         flex-direction: column;
         align-items: center;
@@ -159,18 +160,18 @@
       }
     }
     .sectionProject {
-      padding-top: 14rem;
+      padding-top: 9rem;
       height: auto;
     }
     .sectionSkills {
       &__title {
-        margin-top: 16.5rem;
+        margin-top: 11rem;
       }
     }
     .sectionContact {
       padding-top: $padding-top-link;
       &__title {
-        margin-top: 10rem;
+        margin-top: 5rem;
       }
     }
   }
