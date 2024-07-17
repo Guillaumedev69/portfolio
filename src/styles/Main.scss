@@ -110,7 +110,7 @@
     gap: 0.5rem;
     p {
       text-align: center;
-      color: red;
+      color: #fff
     }
     &__title {
       @include main-title;
@@ -160,6 +160,7 @@
     }
     .sectionProject {
       padding-top: 14rem;
+      height: auto;
     }
     .sectionSkills {
       &__title {

@@ -1,66 +1,100 @@
 @import "./Global.scss";
-
 .containerCards {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1rem;
+
   .cards {
-    width: 30rem;
-    height: 25rem;
-    &__Img {
+    width: 20rem;
+    height: 24rem;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+
+    &__frontContent,
+    &__backContent {
+      position: absolute;
       width: 100%;
-      height: 15rem;
+      height: 100%;
+      backface-visibility: hidden;
+      transition: transform 0.6s;
     }
-    &__Title {
-      font-size: 1.75rem;
-    }
-    &__P {
-      text-wrap: balance;
-      font-size: 1.2rem;
-    }
-    .cardsIconsContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      margin-top: 2rem;
-      gap: 2rem;
-      .cardsIcons {
-        width: 5rem;
-        height: 5rem;
+
+    &__frontContent {
+      background-color: $backgrd;
+      border: 2px solid $text-white;
+      border-radius: 1rem;
+      transform: rotateY(0deg);
+
+      img {
+        width: 100%;
+        height: 17rem;
+        border-radius: 0.75rem 0.75rem 0 0;
       }
+
+      h3 {
+        color: $text-blue;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+
+    &__backContent {
+      background-color: $backgrd;
+      border: 2px solid white;
+      border-radius: 1rem;
+      transform: rotateY(-180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      p {
+        font-family: $font-first;
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+      }
+
+      .cardsIconsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        gap: 1rem;
+
+        .cardsIcons {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+
       a {
         color: $text-blue;
         text-decoration: none;
+        font-size: 1rem;
+        width: 8rem;
       }
+      a:hover{
+        color: $text-white;
+      }
+    }
+
+    &.flipped .cards__frontContent {
+      transform: rotateY(180deg);
+    }
+
+    &.flipped .cards__backContent {
+      transform: rotateY(0deg);
     }
   }
 }
 
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
-  .containerCards {
-    width: 100%;
-    .cards {
-      width: 100%;
-      &__Img {
-        width: 100%;
-        height: 12rem;
-      }
-      &__Title {
-        font-size: 1.5rem;
-      }
-      .cardsIconsContainer {
-        .cardsIcons {
-          width: 4rem;
-          height: 4rem;
-        }
-      }
-    }
-  }
 }
 
 /* Small devices (landscape phones, ≥576px) */
@@ -70,11 +104,14 @@
 /* Medium devices (tablets, ≥768px) */
 @media (min-width: 768px) {
 }
+
 /* Large devices (desktops, ≥992px) */
 @media (min-width: 992px) {
 }
+
 /* Extra large devices (large desktops, ≥1200px) */
 @media (min-width: 1200px) {
 }
+
 @media (min-width: 1440px) {
 }
