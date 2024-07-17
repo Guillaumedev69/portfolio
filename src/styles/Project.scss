@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 
   .cards {
     width: 20rem;
@@ -78,7 +78,7 @@
         font-size: 1rem;
         width: 8rem;
       }
-      a:hover{
+      a:hover {
         color: $text-white;
       }
     }
@@ -95,6 +95,25 @@
 
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
+  .containerCards {
+    .cards {
+      width: 18rem;
+      height: 22rem;
+      &__frontContent {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+      &__backContent {
+        p {
+          font-size: 1rem;
+        }
+        a{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }
 
 /* Small devices (landscape phones, ≥576px) */

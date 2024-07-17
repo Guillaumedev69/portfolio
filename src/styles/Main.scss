@@ -23,6 +23,7 @@
   font-family: $font-first;
   .sectionIntro {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 10rem;
@@ -33,6 +34,13 @@
       font-size: 3rem;
       text-align: center;
       color: $text-white;
+    }
+    .iconIntro {
+      margin-top: 1rem;
+      color: $text-white;
+      font-size: 3rem;
+      bottom: 1rem;
+      animation: bounce 3s infinite ease-in;
     }
   }
   .sectionInfo {
@@ -110,7 +118,7 @@
     gap: 0.5rem;
     p {
       text-align: center;
-      color: #fff
+      color: #fff;
     }
     &__title {
       @include main-title;
@@ -133,7 +141,7 @@
       }
     }
     .sectionInfo {
-      padding-top: 10rem;
+      padding-top: 11rem;
       .sectionInfoContent {
         flex-direction: column;
         align-items: center;
@@ -160,18 +168,18 @@
       }
     }
     .sectionProject {
-      padding-top: 9rem;
+      padding-top: 11rem;
       height: auto;
     }
     .sectionSkills {
       &__title {
-        margin-top: 11rem;
+        margin-top: 13rem;
       }
     }
     .sectionContact {
       padding-top: $padding-top-link;
       &__title {
-        margin-top: 5rem;
+        margin-top: 7rem;
       }
     }
   }

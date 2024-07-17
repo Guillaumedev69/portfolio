@@ -6,6 +6,7 @@ import Project from "./Project";
 import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import BtnCv from "./BtnCv";
 
 const Main = () => {
@@ -21,6 +22,7 @@ const Main = () => {
           <br />
           Découvrez mon profil
         </p>
+        <FontAwesomeIcon icon={faAnglesDown} className="iconIntro"/>
       </section>
       <section className="sectionInfo" id="about">
         <h2 className="aboutTitle">À PROPOS</h2>
@@ -74,7 +76,7 @@ const Main = () => {
         </p>
         <ContactForm />
         <a href="#main">
-          <FontAwesomeIcon icon={faAnglesUp} title="up"/> 
+          <FontAwesomeIcon icon={faAnglesUp} title="up" />
         </a>
       </section>
     </main>

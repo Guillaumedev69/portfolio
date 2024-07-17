@@ -71,23 +71,22 @@
     justify-content: center;
     gap: 3rem;
     padding: 1rem;
+    margin-top: 0;
 
     &__iconsTitleContain {
       gap: 1rem;
     }
 
     &__icons {
-      width: 6rem;
-      height: 7rem;
+      width: 2.5rem;
+      height: 3.5rem;
     }
 
-    &__iconsTitleContain:hover {
-      bottom: 1rem;
-      &__title {
-        margin: 0;
-        font-size: 1.1rem;
-        color: $text-white;
-      }
+    bottom: 1rem;
+    &__title {
+      margin: 0;
+      font-size: 0.8rem;
+      color: $text-white;
     }
   }
 }
