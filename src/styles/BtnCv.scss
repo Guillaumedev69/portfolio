@@ -1,23 +1,15 @@
-@import "./Global.scss";
 .btnCv {
-  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
   button {
     cursor: pointer;
-    color: $text-blue;
     border: none;
-    background-color: rgba($color: #000000, $alpha: 0);
-    text-decoration: underline;
-    font-family: $font-second;
-    font-size: 1.4rem;
-    
+    background: none;
   }
-  .iconBtnCv{
-    color: $text-blue;
-font-size: 1.4rem;
-  }
-  button:active{
-    color: $text-white;
-    position: relative;
-    top: 1px;
+  a{
+    text-decoration: underline ;
+    color: #131114;
   }
 }

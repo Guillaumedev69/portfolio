@@ -16,7 +16,7 @@ const BtnContact = () => {
   return (
     <div className="containerBulle">
       {!isBtnInvisible &&(<button className="btnContact" onClick={handleButtonClick}>
-        Contactez-moi !
+        Contactez-moi
       </button>)}
       {isBulleVisible && (
         <div className="btnContact__bulle">

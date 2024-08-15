@@ -1,0 +1,163 @@
+@import "../index.scss";
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  .nav {
+    font-family: "cuprum";
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: #23282600;
+    &__container-link-page,
+    &__container-link-url {
+      padding: 0.5rem;
+
+      list-style: none;
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+      .navLink {
+        color: #e8eacc;
+      }
+    }
+
+    &__container-link-page {
+      gap: 0.5rem;
+      font-size: 1.3rem;
+      flex-direction: column;
+      align-items: end;
+    }
+    &__container-link-url {
+      gap: 1rem;
+      flex-direction: row;
+      justify-content: end;
+      img {
+        width: 1.6rem;
+      }
+      .btnAccess {
+        display: none;
+      }
+    }
+    button {
+      background: none;
+      color: #8c9c7c;
+      border: none;
+      cursor: pointer;
+    }
+    .burgerIcon {
+      color: #8c9c7c;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* Small devices (landscape phones, ≥576px) */
+@media (min-width: 576px) {
+  .nav {
+    font-family: "cuprum";
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: #23282600;
+    &__container-link-page,
+    &__container-link-url {
+      padding: 0.5rem;
+
+      list-style: none;
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+      .navLink {
+        color: #e8eacc;
+      }
+    }
+
+    &__container-link-page {
+      gap: 0.5rem;
+      font-size: 1.4rem;
+      flex-direction: column;
+      align-items: end;
+    }
+    &__container-link-url {
+      gap: 1rem;
+      flex-direction: row;
+      justify-content: end;
+      img {
+        width: 1.8rem;
+      }
+      .btnAccess {
+        display: none;
+      }
+    }
+    button {
+      background: none;
+      color: #8c9c7c;
+      border: none;
+      cursor: pointer;
+    }
+    .burgerIcon {
+      color: #8c9c7c;
+      font-size: 1.9rem;
+    }
+  }
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+  .nav {
+    font-family: "cuprum";
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    background-color: #23282600;
+    gap: 1rem;
+    &__container-link-page,
+    &__container-link-url {
+      padding: 0.5rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+      .navLink {
+        color: #e8eacc;
+      }
+    }
+
+    &__container-link-page {
+      gap: 1.5rem;
+      font-size: 1.8rem;
+      flex-direction: row;
+      align-items: end;
+    }
+    &__container-link-url {
+      gap: 1rem;
+      flex-direction: row;
+      justify-content: end;
+      img {
+        width: 2rem;
+      }
+      .btnAccess {
+        display: none;
+      }
+    }
+    button {
+      background: none;
+      color: #8c9c7c;
+      border: none;
+      cursor: pointer;
+    }
+    .burgerIcon {
+      color: #8c9c7c;
+      font-size: 2.1rem;
+    }
+  }
+}
+
+/* Extra large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) {
+}

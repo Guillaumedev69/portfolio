@@ -1,47 +1,108 @@
-@import "./Global.scss";
-footer {
-  color: $text-white;
-  font-family: $font-first;
-  text-align: center;
-  box-shadow: 0rem -0.5rem 1rem 0.5rem $backgrd;
-  padding: 2.5rem 0 2.5rem 0;
-  p{
-    margin: 0;
-  }
-  .btnSign{
-    margin-top: 1rem;
-    color: $backgrd;
-  }
-  .btnSign:hover{
-    margin-top: 1rem;
-    color: $text-blue;
-  }
-}
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
-  
+  .footer {
+    font-weight: bold;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #e8eacc;
+    &__link {
+      list-style: none;
+      .footerLink {
+        font-size: 1rem;
+        text-align: center;
+        color: #131114;
+        text-decoration: none;
+        font-family: "cuprum";
+      }
+    }
+    &__info {
+      color: #131114;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "cuprum";
+      .btnSign {
+        display: none;
+      }
+    }
+  }
 }
 
 /* Small devices (landscape phones, ≥576px) */
 @media (min-width: 576px) {
-  
+  .footer {
+    font-weight: bold;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #e8eacc;
+    &__link {
+      list-style: none;
+      .footerLink {
+        font-size: 1.25rem;
+        text-align: center;
+        color: #131114;
+        text-decoration: none;
+        font-family: "cuprum";
+      }
+    }
+    &__info {
+      color: #131114;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "cuprum";
+      .btnSign {
+        display: none;
+      }
+    }
+  }
 }
 
 /* Medium devices (tablets, ≥768px) */
 @media (min-width: 768px) {
-  
+  .footer {
+    &__ink {
+      font-size: 1.4rem;
+      text-align: center;
+      color: #131114;
+      text-decoration: none;
+      font-family: "cuprum";
+    }
+    &____info {
+      text-align: center;
+      width: 100%;
+    }
+  }
 }
 
 /* Large devices (desktops, ≥992px) */
 @media (min-width: 992px) {
-  
 }
 
 /* Extra large devices (large desktops, ≥1200px) */
 @media (min-width: 1200px) {
-  
 }
 
 @media (min-width: 1440px) {
-  
+  .footer {
+    align-items: start;
+    .footerLink {
+      font-size: 1.4rem;
+      text-align: start;
+      color: #131114;
+      text-decoration: none;
+      font-family: "cuprum";
+    }
+    &__info {
+      text-align: start;
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  }
 }

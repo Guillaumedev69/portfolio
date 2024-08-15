@@ -3,12 +3,7 @@ import "../styles/FormContact.scss";
 import BtnContact from "./BtnContact";
 
 const ContactForm = () => {
-  const [isVisibleBtn, setIsVisibleBtn] = useState(false);
   const [message, setMessage] = useState("");
-
-  const handleButtonClick = () => {
-    setIsVisibleBtn(!isVisibleBtn);
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -50,37 +45,21 @@ const ContactForm = () => {
               name="user_email"
             />
           </div>
-          <div className="infoContainer__file">
-            <label id="documents-label" htmlFor="documents">Documents:</label>
-            <input
-              type="file"
-              id="documents"
-              aria-labelledby="documents-label"
-              name="user_file"
+          <div className="infoContainer__msg">
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              placeholder="ex:“Vous savez, moi je ne crois pas qu'il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd'hui avec vous, je dirais que c'est d'abord des rencontres…”"
+              name="message"
             />
           </div>
         </div>
-        <div className="infoContainer__msg">
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            placeholder="ex:“Vous savez, moi je ne crois pas qu'il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd'hui avec vous, je dirais que c'est d'abord des rencontres…”"
-            name="message"
-          />
-        </div>
         <BtnContact />
-        <input
-          type="submit"
-          value="Envoyer"
-          className="formContact__btn"
-          onClick={handleButtonClick}
-        />
+        <input type="submit" value="Envoyer" className="formContact__btn" />
       </form>
       {message && <p className="waitForm__formMessage">{message}</p>}
-      {isVisibleBtn && <BtnContact />}
     </div>
   );
 };
 
 export default ContactForm;
-

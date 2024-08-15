@@ -8,38 +8,48 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import BtnCv from "./BtnCv";
+import Header from "./Header";
+
 
 const Main = () => {
   return (
-    <main className="main">
-      <section className="sectionIntro" id="main">
+    <main className="main" id="main">
+      <Header />
+      <section className="sectionIntro">
         <p className="pIntro">
-          Bienvenue ! <br />
+          Création, Optimisation, Maintenance et Développement Web <br />
           <br />
           Vous êtes à la recherche d’un développeur web passionné pour réaliser
-          vos projets ou compléter votre équipe ?
+          <a href="#project">
+            {" "}
+            <span>vos projets</span>
+          </a>{" "}
+          ou compléter votre équipe ?
           <br />
           <br />
           Découvrez mon profil
         </p>
-        <FontAwesomeIcon icon={faAnglesDown} className="iconIntro"/>
+        <div className="containericonIntro">
+          <FontAwesomeIcon icon={faAnglesDown} className="iconIntro" />
+          <FontAwesomeIcon icon={faAnglesDown} className="iconIntro" />
+        </div>
       </section>
       <section className="sectionInfo" id="about">
-        <h2 className="aboutTitle">À PROPOS</h2>
         <div className="sectionInfoContent">
           <div className="containerTitlePBtn">
             <div className="containerTitle">
-              <h2 className="titleFirstInfo">GUILLAUME DESTRÉE</h2>
-              <h3 className="titleSecondInfo">Développeur Web</h3>
+              <h2 className="titleFirstInfo aboutTitle">GUILLAUME DESTRÉE</h2>
             </div>
             <p className="pInfo">
-              Salut ! Je suis Guillaume, développeur web. Passionné par le
-              développement web, j&apos;ai entrepris une reconversion
-              professionnelle et obtenu mon BTS. Je maîtrise plusieurs langages
-              tels que SASS, REACT, Node.js, Express, Mongo.DB etc. et plusieurs
-              outils tels que Figma, Lighthouse, Wave, Trello, Notion, Slack
-              etc. Vous trouverez quelques uns de mes projets dans mon
-              portfolio.
+              Je suis développeur spécialisé dans les sites Web et Mobile
+              passionné par mon métier, je maîtrise principalement{" "}
+              <span>REACT</span> et Node.js.
+              <br />
+              Je maitrise aussi plusieurs outils tels que Figma pour la lecture
+              ou la création de maquette, Lighthouse et Wave pour
+              l&apos;optimisation de votre site web ainsi que, Trello, Notion,
+              Slack etc. Vous trouverez quelques uns de mes projets dans la
+              section dédiée.
               <br />
               <br /> Je suis à la recherche d&apos;opportunités professionnelles
               en tant que développeur front end/fullstack. Je suis à
@@ -50,6 +60,8 @@ const Main = () => {
               compétences et ma motivation et saurai m&apos;investir, apprendre
               et me perfectionner au quotidien.
             </p>
+            <BtnContact />
+            <BtnCv />
           </div>
           <img
             src={PhotoProfil}
@@ -57,28 +69,27 @@ const Main = () => {
             alt="Photo de Guillaume DESTRÉE"
           />
         </div>
-        <BtnContact />
-        <BtnCv />
       </section>
       <section className="sectionProject" id="project">
-        <h2 className="projectTitle">PROJETS</h2>
+        <h2 className="projectTitle">Projets</h2>
         <Project />
       </section>
       <section className="sectionSkills" id="skills">
-        <h2 className="sectionSkills__title">SKILLS</h2>
+        <h2 className="skillsTitle">SKILLS</h2>
         <Skills />
       </section>
       <section className="sectionContact" id="contact">
-        <h2 className="sectionContact__title">CONTACT</h2>
+        <h2 className="contactTitle">CONTACT</h2>
         <p>
           Le formulaire n&apos;est pas encore actif merci de cliquer directement
           sur le bouton &ldquo;Contactez-moi !&rdquo;
         </p>
         <ContactForm />
         <a href="#main">
-          <FontAwesomeIcon icon={faAnglesUp} title="up" />
+          <FontAwesomeIcon className="iconA" icon={faAnglesUp} title="up" />
         </a>
       </section>
+      
     </main>
   );
 };

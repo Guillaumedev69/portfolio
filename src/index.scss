@@ -1,5 +1,40 @@
-@import "./styles/Global.scss";
-body{
-    background-color: $backgrd;
-    margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Luciole";
+  src: url("../assets/fonts/Luciole-Regular/Luciole-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/Luciole-Regular/Luciole-Regular.eot")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/fonts/Luciole-Regular/Luciole-Regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../assets/fonts/Luciole-Regular/Luciole-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../assets/fonts//Luciole-Regular/Luciole-Regular.svg") format("svg"); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /*
+  color: #fdfdfb;
+  color:#E8eacc;
+  color:#8c9c7c;
+  color:#232826;
+  color:#131114;
+
+  color:#1C0F12;
+  color:#6F7E86;
+  color:#B9CFD0;
+  color:#BEBCC8;
+  color:#E4E4E4;*/
+}
+#root{
+  display: flex;
+  flex-direction: column;
+
 }

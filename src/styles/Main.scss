@@ -1,185 +1,122 @@
-@import "./Global.scss";
-.main {
-  background: rgb(5, 15, 15);
-  background: -moz-linear-gradient(
-    110deg,
-    rgba(5, 15, 15, 1) 30%,
-    rgba(0, 192, 255, 1) 130%
-  );
-  background: -webkit-linear-gradient(
-    110deg,
-    rgba(5, 15, 15, 1) 30%,
-    rgba(0, 192, 255, 1) 130%
-  );
-  background: linear-gradient(
-    110deg,
-    rgba(5, 15, 15, 1) 30%,
-    rgba(0, 192, 255, 1) 130%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050f0f",endColorstr="#00c0ff",GradientType=1);
-  cursor: $cursortheme;
-  display: flex;
-  flex-direction: column;
-  font-family: $font-first;
-  .sectionIntro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
-    .pIntro {
-      max-width: 1440px;
-      font-family: $font-second;
-      font-size: 3rem;
-      text-align: center;
-      color: $text-white;
-    }
-    .iconIntro {
-      margin-top: 1rem;
-      color: $text-white;
-      font-size: 3rem;
-      bottom: 1rem;
-      animation: bounce 3s infinite ease-in;
-    }
-  }
-  .sectionInfo {
-    padding-top: $padding-top-link;
-    color: $text-white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    .sectionInfoContent {
-      color: $text-white;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    .aboutTitle {
-      @include main-title;
-    }
-    .containerTitlePBtn {
-      display: flex;
-      flex-direction: column;
-      .containerTitle {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 0.5rem;
-        .titleFirstInfo {
-          font-size: 2rem;
-          margin: 0;
-        }
-        .titleSecondInfo {
-          color: $text-blue;
-          font-size: 1.5rem;
-          margin: 0;
-        }
-      }
-      .pInfo {
-        padding-top: 1rem;
-        font-size: 1.3rem;
-        font-family: $font-first;
-        max-width: 50rem;
-        text-align: justify;
-      }
-    }
-    .imgInfo {
-      width: 25rem;
-      height: 25rem;
-    }
-  }
-  .sectionProject {
-    padding-top: $padding-top-link;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    .projectTitle {
-      @include main-title;
-    }
-  }
-  .sectionSkills {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__title {
-      margin-top: 10rem;
-      @include main-title;
-    }
-  }
-  .sectionContact {
-    padding-top: $padding-top-link;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    p {
-      text-align: center;
-      color: #fff;
-    }
-    &__title {
-      @include main-title;
-    }
-    a {
-      color: $text-white;
-      font-size: 2rem;
-    }
-  }
-}
-
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
-  .main {
+  main {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    background-color: #232826;
     .sectionIntro {
+      background-color: #232826;
       padding-bottom: 5rem;
-      .pIntro {
-        font-size: 1.6rem;
-        padding: 0.2rem;
+      .containericonIntro {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .pIntro,
+      .iconIntro {
+        padding: 1rem;
+        color: #e8eacc;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      .iconIntro {
+        font-size: 1.7rem;
+      }
+      a {
+        text-decoration: none;
+        span {
+          text-wrap: nowrap;
+          font-weight: bold;
+          font-family: "cuprum";
+          font-size: 1.3rem;
+          color: #232826;
+          border: 1px solid #e8eacc;
+          border-radius: 5px;
+          padding: 0 0.5rem;
+          background-color: #8c9c7c;
+        }
       }
     }
+    .aboutTitle {
+      color: #232826;
+      padding-bottom: 1rem;
+    }
     .sectionInfo {
-      padding-top: 11rem;
+      padding: 6rem 0.5rem 1rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      background-color: #e8eacc;
       .sectionInfoContent {
+        display: flex;
         flex-direction: column;
         align-items: center;
-      }
-      .containerTitlePBtn {
-        .containerTitle {
+        gap: 1rem;
+        color: #131114;
+        .containerTitlePBtn{
+          display: flex;
+          flex-direction: column;
           align-items: center;
-          .titleFirstInfo {
-            font-size: 1.8rem;
-          }
-          .titleSecondInfo {
-            font-size: 1.4rem;
-          }
+          gap: 1rem;
         }
-        .pInfo {
-          font-size: 1.1rem;
-          text-align: center;
+        .imgInfo {
+          width: 15rem;
+          height: 15rem;
+          order: -1;
         }
-      }
-      .imgInfo {
-        margin: 2rem 0;
-        width: 15rem;
-        height: 15rem;
       }
     }
     .sectionProject {
-      padding-top: 11rem;
-      height: auto;
+      .projectTitle {
+        color: #e8eacc;
+      }
+      padding: 6rem 0.5rem 0 0.5rem;
+      background-color: #232826;
+      color: #e8eacc;
     }
     .sectionSkills {
-      &__title {
-        margin-top: 13rem;
+      background-color: #8c9c7c;
+      padding: 6rem 0.5rem 3rem 0.5rem;
+      .skillsTitle {
+        color: #232826;
       }
     }
     .sectionContact {
-      padding-top: $padding-top-link;
-      &__title {
-        margin-top: 7rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #232826;
+      padding: 3rem 0.5rem;
+      .contactTitle {
+        color: #8c9c7c;
+        margin-bottom: 2rem;
+      }
+      p {
+        color: #8c9c7c;
+      }
+      a {
+        .iconA {
+          position: relative;
+          color: #e8eacc;
+          font-size: 2rem;
+          top: 1rem;
+          animation: bounce 2s infinite ease-in-out;
+          animation-delay: 1s;
+        }
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-40px);
+          }
+        }
       }
     }
   }
@@ -187,41 +124,129 @@
 
 /* Small devices (landscape phones, ≥576px) */
 @media (min-width: 576px) {
-  .main {
+  main {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    background-color: #232826;
     .sectionIntro {
-      .pIntro {
+      background-color: #232826;
+      padding-bottom: 5rem;
+      .containericonIntro {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .pIntro,
+      .iconIntro {
+        padding: 1rem;
+        color: #e8eacc;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .iconIntro {
         font-size: 2rem;
       }
-    }
-    .sectionInfo {
-      padding-top: 14rem;
-      .sectionInfoContent {
-        flex-direction: column;
-        align-items: center;
-      }
-      .containerTitlePBtn {
-        .containerTitle {
-          align-items: center;
+      a {
+        text-decoration: none;
+        span {
+          text-wrap: nowrap;
+          font-weight: bold;
+          font-family: "cuprum";
+          font-size: 1.4rem;
+          color: #232826;
+          border: 1px solid #e8eacc;
+          border-radius: 5px;
+          padding: 0 0.5rem;
+          background-color: #8c9c7c;
         }
       }
-      .imgInfo {
-        margin: 2rem 0;
-        width: 20rem;
-        height: 20rem;
+    }
+    .aboutTitle {
+      color: #232826;
+      font-size: 1.8rem;
+      padding-bottom: 1rem;
+    }
+    .sectionInfo {
+      padding: 8rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      background-color: #e8eacc;
+      .sectionInfoContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        color: #131114;
+        .containerTitlePBtn{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+        .imgInfo {
+          width: 20rem;
+          height: 20rem;
+          order: -1;
+        }
+        .pInfo {
+          font-size: 1.2rem;
+        }
       }
     }
     .sectionProject {
-      padding-top: 14rem;
+      .projectTitle {
+        color: #e8eacc;
+        font-size: 2rem;
+      }
+      padding: 8rem 0.5rem 0 0.5rem;
+      background-color: #232826;
+      color: #e8eacc;
     }
     .sectionSkills {
-      &__title {
-        margin-top: 16.5rem;
+      background-color: #8c9c7c;
+      padding: 8rem 0.5rem 3rem 0.5rem;
+      .skillsTitle {
+        color: #232826;
+        font-size: 2rem;
       }
     }
     .sectionContact {
-      padding-top: $padding-top-link;
-      &__title {
-        margin-top: 10.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #232826;
+      padding: 8rem 2rem 6rem 2rem;
+      .contactTitle {
+        color: #8c9c7c;
+        margin-bottom: 2rem;
+      }
+      p {
+        color: #8c9c7c;
+      }
+      a {
+        .iconA {
+          position: relative;
+          color: #e8eacc;
+          font-size: 2rem;
+          top: 1rem;
+          animation: bounce 2s infinite ease-in-out;
+          animation-delay: 1s;
+        }
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-40px);
+          }
+        }
       }
     }
   }
@@ -229,72 +254,253 @@
 
 /* Medium devices (tablets, ≥768px) */
 @media (min-width: 768px) {
+  main {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    background-color: #232826;
+    .sectionIntro {
+      background-color: #232826;
+      padding-bottom: 5rem;
+      .containericonIntro {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .pIntro,
+      .iconIntro {
+        padding: 1rem;
+        color: #e8eacc;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .iconIntro {
+        font-size: 2rem;
+      }
+      a {
+        text-decoration: none;
+        span {
+          text-wrap: nowrap;
+          font-weight: bold;
+          font-family: "cuprum";
+          font-size: 1.4rem;
+          color: #232826;
+          border: 1px solid #e8eacc;
+          border-radius: 5px;
+          padding: 0 0.5rem;
+          background-color: #8c9c7c;
+        }
+      }
+    }
+    .aboutTitle {
+      color: #232826;
+      font-size: 1.8rem;
+      padding-bottom: 1rem;
+    }
+    .sectionInfo {
+      padding: 8rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      background-color: #e8eacc;
+      .sectionInfoContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        color: #131114;
+        .imgInfo {
+          width: 20rem;
+          height: 20rem;
+        }
+        .pInfo {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .sectionProject {
+      .projectTitle {
+        color: #e8eacc;
+        font-size: 2rem;
+      }
+      padding: 8rem 0.5rem 0 0.5rem;
+      background-color: #232826;
+      color: #e8eacc;
+    }
+    .sectionSkills {
+      background-color: #8c9c7c;
+      padding: 8rem 0.5rem 3rem 0.5rem;
+      .skillsTitle {
+        color: #232826;
+        font-size: 2rem;
+      }
+    }
+    .sectionContact {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #232826;
+      padding: 8rem 6rem 6rem 6rem;
+      label {
+        font-size: 1.5rem;
+      }
+      .contactTitle {
+        color: #8c9c7c;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+      p {
+        color: #8c9c7c;
+      }
+      a {
+        .iconA {
+          position: relative;
+          color: #e8eacc;
+          font-size: 2rem;
+          top: 1rem;
+          animation: bounce 2s infinite ease-in-out;
+          animation-delay: 1s;
+        }
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-40px);
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Large devices (desktops, ≥992px) */
 @media (min-width: 992px) {
-  .main {
+  main {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    background-color: #232826;
     .sectionIntro {
-      .pIntro {
-        font-size: 3rem;
+      background-color: #232826;
+      padding-bottom: 5rem;
+      .containericonIntro {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .pIntro,
+      .iconIntro {
+        padding: 1rem;
+        color: #e8eacc;
         text-align: center;
-        color: $text-white;
+        font-size: 1.5rem;
+      }
+      .iconIntro {
+        font-size: 2rem;
+      }
+      a {
+        text-decoration: none;
+        span {
+          text-wrap: nowrap;
+          font-weight: bold;
+          font-family: "cuprum";
+          font-size: 1.4rem;
+          color: #232826;
+          border: 1px solid #e8eacc;
+          border-radius: 5px;
+          padding: 0 0.5rem;
+          background-color: #8c9c7c;
+        }
       }
     }
+    .aboutTitle {
+      color: #232826;
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
     .sectionInfo {
-      padding-top: $padding-top-link;
+      padding: 8rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      background-color: #e8eacc;
       .sectionInfoContent {
-        color: $text-white;
-        display: flex;
-        flex-direction: column;
-      }
-      .aboutTitle {
-        @include main-title;
-      }
-      .containerTitlePBtn {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .containerTitle {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.5rem;
-          .titleFirstInfo {
-            font-size: 2rem;
-            margin: 0;
-          }
-          .titleSecondInfo {
-            color: $text-blue;
-            font-size: 1.5rem;
-            margin: 0;
-          }
+        gap: 1rem;
+        color: #131114;
+        .imgInfo {
+          width: 20rem;
+          height: 20rem;
         }
         .pInfo {
-          padding-top: 1rem;
-          font-size: 1.3rem;
-          font-family: $font-first;
-          max-width: 50rem;
+          font-size: 1.2rem;
         }
-      }
-      .imgInfo {
-        width: 20rem;
-        height: 20rem;
       }
     }
     .sectionProject {
-      padding-top: $padding-top-link;
+      .projectTitle {
+        color: #e8eacc;
+        font-size: 2rem;
+      }
+      padding: 8rem 0.5rem 0 0.5rem;
+      background-color: #232826;
+      color: #e8eacc;
     }
     .sectionSkills {
-      padding-top: 8.75rem;
-      &__title {
-        margin: 0;
+      background-color: #8c9c7c;
+      padding: 8rem 0.5rem 3rem 0.5rem;
+      .skillsTitle {
+        color: #232826;
+        font-size: 2rem;
       }
     }
     .sectionContact {
-      padding-top: 8.75rem;
-      &__title {
-        margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #232826;
+      padding: 8rem 16rem 6rem 16rem;
+      label {
+        font-size: 1.5rem;
+      }
+      .contactTitle {
+        color: #8c9c7c;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+      p {
+        color: #8c9c7c;
+      }
+      a {
+        .iconA {
+          position: relative;
+          color: #e8eacc;
+          font-size: 2rem;
+          top: 1rem;
+          animation: bounce 2s infinite ease-in-out;
+          animation-delay: 1s;
+        }
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-40px);
+          }
+        }
       }
     }
   }
@@ -305,46 +511,147 @@
 }
 
 @media (min-width: 1440px) {
-  .main {
-    .sectionInfo {
-      .aboutTitle {
-        @include main-title;
+  main {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    background-color: #232826;
+    .sectionIntro {
+      background-color: #232826;
+      padding-bottom: 5rem;
+      .containericonIntro {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
       }
-      .containerTitlePBtn {
-        .containerTitle {
-          .titleFirstInfo {
-            font-size: 2.2rem;
+      .pIntro,
+      .iconIntro {
+        padding: 1rem;
+        color: #e8eacc;
+        text-align: center;
+        font-size: 1.8rem;
+      }
+      .iconIntro {
+        font-size: 2.2rem;
+      }
+      a {
+        text-decoration: none;
+        span {
+          text-wrap: nowrap;
+          font-weight: bold;
+          font-family: "cuprum";
+          font-size: 1.8rem;
+          color: #232826;
+          border: 1px solid #e8eacc;
+          border-radius: 5px;
+          padding: 0 0.5rem;
+          background-color: #8c9c7c;
+        }
+      }
+    }
+    .aboutTitle {
+      color: #232826;
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+    }
+    .sectionInfo {
+      padding: 8rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      background-color: #e8eacc;
+      .containerBulle{
+        .btnContact{
+          width: 15rem;
+          font-size: 1.5rem;
+          &__icon{
+            font-size: 2rem;
           }
-          .titleSecondInfo {
-            font-size: 1.7rem;
-          }
+        }
+      }
+      .btnCv{
+        font-size: 1.5rem;
+        button{
+          font-size: 1.1rem;
+        }
+      }
+      .sectionInfoContent {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        color: #131114;
+        .imgInfo {
+          width: 25rem;
+          height: 25rem;
+          order: 1;
         }
         .pInfo {
-          font-size: 1.5rem;
-          max-width: 80%;
+          font-size: 1.2rem;
+          max-width: 50rem;
         }
-      }
-      .imgInfo {
-        width: 25rem;
-        height: 25rem;
+        .containerTitlePBtn{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
       }
     }
     .sectionProject {
-      padding-top: $padding-top-link;
       .projectTitle {
-        @include main-title;
+        color: #e8eacc;
+        font-size: 2.5rem;
       }
+      padding: 8rem 0.5rem 0 0.5rem;
+      background-color: #232826;
+      color: #e8eacc;
     }
     .sectionSkills {
-      &__title {
-        @include main-title;
-        margin-bottom: 1.5rem;
+      background-color: #8c9c7c;
+      padding: 8rem 0.5rem 3rem 0.5rem;
+      .skillsTitle {
+        color: #232826;
+        font-size: 2.5rem;
       }
     }
     .sectionContact {
-      &__title {
-        @include main-title;
-        margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background-color: #232826;
+      padding: 8rem 25rem 6rem 25rem;
+    
+
+      .contactTitle {
+        color: #8c9c7c;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+      }
+      p {
+        color: #8c9c7c;
+      }
+      a {
+        .iconA {
+          position: relative;
+          color: #e8eacc;
+          font-size: 2rem;
+          top: 1rem;
+          animation: bounce 2s infinite ease-in-out;
+          animation-delay: 1s;
+        }
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-40px);
+          }
+        }
       }
     }
   }

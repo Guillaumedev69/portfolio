@@ -1,24 +1,8 @@
-@import "./Global.scss";
-
 .skillsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 2rem;
-
+  position: relative;
+  z-index: 0;
   &__iconsTitleContain {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 1rem;
     animation: bounce 2s infinite ease-in-out;
-  }
-
-  &__icons {
-    width: 6rem;
-    height: 7rem;
   }
   &__iconsTitleContain:nth-child(1) {
     animation-delay: 0.2s;
@@ -61,32 +45,32 @@
     }
   }
   &__title {
-    color: $text-white;
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
-    padding: 1rem;
-    margin-top: 0;
-
+    margin-top: 2rem;
     &__iconsTitleContain {
-      gap: 1rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 1rem;
     }
-
     &__icons {
-      width: 2.5rem;
-      height: 3.5rem;
+      width: 5rem;
+      height: 6rem;
     }
-
-    bottom: 1rem;
-    &__title {
-      margin: 0;
-      font-size: 0.8rem;
-      color: $text-white;
+    &__title{
+      font-size: 1.6rem;
+      font-family: "Montserrat";
+      color: #232826;
     }
   }
 }
@@ -94,16 +78,26 @@
 /* Small devices (landscape phones, ≥576px) */
 @media (min-width: 576px) {
   .skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem;
-
+    gap: 3rem;
+    margin-top: 2rem;
     &__iconsTitleContain {
-      gap: 1rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 1rem;
     }
-
-    &__title {
-      margin: 0;
-      font-size: 1.1rem;
+    &__icons {
+      width: 5rem;
+      height: 6rem;
+    }
+    &__title{
+      font-size: 1.6rem;
+      font-family: "Montserrat";
+      color: #232826;
     }
   }
 }

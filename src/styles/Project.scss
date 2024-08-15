@@ -1,115 +1,88 @@
-@import "./Global.scss";
-.containerCards {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-
-  .cards {
-    width: 20rem;
-    height: 24rem;
-    perspective: 1000px;
-    cursor: pointer;
-    position: relative;
-
-    &__frontContent,
-    &__backContent {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      transition: transform 0.6s;
-    }
-
-    &__frontContent {
-      background-color: $backgrd;
-      border: 2px solid $text-white;
-      border-radius: 1rem;
-      transform: rotateY(0deg);
-
-      img {
-        width: 100%;
-        height: 17rem;
-        border-radius: 0.75rem 0.75rem 0 0;
-      }
-
-      h3 {
-        color: $text-blue;
-        text-align: center;
-        font-size: 1.5rem;
-      }
-    }
-
-    &__backContent {
-      background-color: $backgrd;
-      border: 2px solid white;
-      border-radius: 1rem;
-      transform: rotateY(-180deg);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      p {
-        font-family: $font-first;
-        font-size: 1.1rem;
-        padding: 0 0.5rem;
-      }
-
-      .cardsIconsContainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-        gap: 1rem;
-
-        .cardsIcons {
-          width: 2.5rem;
-          height: 2.5rem;
-        }
-      }
-
-      a {
-        color: $text-blue;
-        text-decoration: none;
-        font-size: 1rem;
-        width: 8rem;
-      }
-      a:hover {
-        color: $text-white;
-      }
-    }
-
-    &.flipped .cards__frontContent {
-      transform: rotateY(180deg);
-    }
-
-    &.flipped .cards__backContent {
-      transform: rotateY(0deg);
-    }
-  }
-}
-
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
   .containerCards {
-    .cards {
-      width: 18rem;
-      height: 22rem;
-      &__frontContent {
-        h3 {
-          font-size: 1.2rem;
+    &__carousel {
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      .cards {
+        width: 17rem;
+        height: 21rem;
+        perspective: 1000px;
+        cursor: pointer;
+        position: relative;
+        &.flipped .cards__frontContent {
+          transform: rotateY(180deg);
         }
-      }
-      &__backContent {
-        p {
-          font-size: 1rem;
+
+        &.flipped .cards__backContent {
+          transform: rotateY(0deg);
         }
-        a{
-          font-size: 0.9rem;
+
+        .frontContent,
+        .backContent {
+          border-radius: 10px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          transition: transform 0.6s;
+          box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+          border: 2px solid #fdfdfb;
+        }
+
+        .frontContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 1rem;
+          background-color: #8c9c7c;
+
+          transform: rotateY(0deg);
+          &__category {
+            font-family: "cuprum";
+            font-size: 1.1rem;
+            text-decoration: underline;
+            color: #232826;
+          }
+          &__Img {
+            width: 16rem;
+            height: 10rem;
+            border-radius: 10px;
+          }
+          &__Title {
+            color: #232826;
+            font-size: 1.25rem;
+          }
+        }
+        .backContent {
+          background-color: #e8eacc;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0.25rem;
+          transform: rotateY(-180deg);
+          &__P {
+            padding: 0.5rem 1rem;
+            font-family: "cuprum";
+            color: #232826;
+          }
+          &__link {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 0.8rem;
+            color: #232826;
+          }
+          .cardsIconsContainerLink {
+            .cardsIcons {
+              width: 3rem;
+              height: 3rem;
+            }
+          }
         }
       }
     }
@@ -118,18 +91,401 @@
 
 /* Small devices (landscape phones, ≥576px) */
 @media (min-width: 576px) {
+  .containerCards {
+    &__carousel {
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      .cards {
+        width: 30rem;
+        height: 30rem;
+        perspective: 1000px;
+        cursor: pointer;
+        position: relative;
+        &.flipped .cards__frontContent {
+          transform: rotateY(180deg);
+        }
+
+        &.flipped .cards__backContent {
+          transform: rotateY(0deg);
+        }
+
+        .frontContent,
+        .backContent {
+          border-radius: 10px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          transition: transform 0.6s;
+          box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+          border: 2px solid #fdfdfb;
+        }
+
+        .frontContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 1rem;
+          background-color: #8c9c7c;
+
+          transform: rotateY(0deg);
+          &__category {
+            font-family: "cuprum";
+            font-size: 1.3rem;
+            text-decoration: underline;
+            color: #232826;
+          }
+          &__Img {
+            width: 25rem;
+            height: 19rem;
+            border-radius: 10px;
+          }
+          &__Title {
+            color: #232826;
+            font-size: 1.5rem;
+          }
+        }
+        .backContent {
+          background-color: #e8eacc;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          transform: rotateY(-180deg);
+          &__P {
+            padding: 0.5rem 1rem;
+            font-family: "cuprum";
+            color: #232826;
+            font-size: 1.5rem;
+          }
+          &__link {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1rem;
+            color: #232826;
+          }
+          .cardsIconsContainerLink {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .iconContainer {
+              display: flex;
+              flex-direction: row;
+              gap: 1rem;
+              .cardsIcons {
+                width: 4rem;
+                height: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Medium devices (tablets, ≥768px) */
 @media (min-width: 768px) {
+  .containerCards {
+    &__carousel {
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      .cards {
+        width: 40rem;
+        height: 30rem;
+        perspective: 1000px;
+        cursor: pointer;
+        position: relative;
+        &.flipped .cards__frontContent {
+          transform: rotateY(180deg);
+        }
+
+        &.flipped .cards__backContent {
+          transform: rotateY(0deg);
+        }
+
+        .frontContent,
+        .backContent {
+          border-radius: 10px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          transition: transform 0.6s;
+          box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+          border: 2px solid #fdfdfb;
+        }
+
+        .frontContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 1rem;
+          background-color: #8c9c7c;
+
+          transform: rotateY(0deg);
+          &__category {
+            font-family: "cuprum";
+            font-size: 1.3rem;
+            text-decoration: underline;
+            color: #232826;
+          }
+          &__Img {
+            width: 35rem;
+            height: 19rem;
+            border-radius: 10px;
+          }
+          &__Title {
+            color: #232826;
+            font-size: 1.5rem;
+          }
+        }
+        .backContent {
+          background-color: #e8eacc;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          transform: rotateY(-180deg);
+          &__P {
+            padding: 0.5rem 1rem;
+            font-family: "cuprum";
+            color: #232826;
+            font-size: 1.5rem;
+          }
+          &__link {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1rem;
+            color: #232826;
+          }
+          .cardsIconsContainerLink {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .iconContainer {
+              display: flex;
+              flex-direction: row;
+              gap: 1rem;
+              .cardsIcons {
+                width: 4rem;
+                height: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Large devices (desktops, ≥992px) */
 @media (min-width: 992px) {
+  .containerCards {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    .cards {
+      width: 50rem;
+      height: 30rem;
+      perspective: 1000px;
+      cursor: pointer;
+      position: relative;
+      &.flipped .cards__frontContent {
+        transform: rotateY(180deg);
+      }
+
+      &.flipped .cards__backContent {
+        transform: rotateY(0deg);
+      }
+
+      .frontContent,
+      .backContent {
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: transform 0.6s;
+        box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+          border: 2px solid #fdfdfb;
+      }
+
+      .frontContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        background-color: #8c9c7c;
+        transform: rotateY(0deg);
+        &__category {
+          font-family: "cuprum";
+          font-size: 1.4rem;
+          text-decoration: underline;
+          color: #232826;
+        }
+        &__Img {
+          width: 40rem;
+          height: 19rem;
+          border-radius: 10px;
+        }
+        &__Title {
+          color: #232826;
+          font-size: 1.8rem;
+        }
+      }
+      .backContent {
+        background-color: #e8eacc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transform: rotateY(-180deg);
+        &__P {
+          padding: 0.5rem 1rem;
+          font-family: "cuprum";
+          color: #232826;
+          font-size: 1.5rem;
+        }
+        &__link {
+          font-weight: bold;
+          font-style: italic;
+          font-size: 1rem;
+          color: #232826;
+        }
+        .cardsIconsContainerLink {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          .iconContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            .cardsIcons {
+              width: 4rem;
+              height: 4rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Extra large devices (large desktops, ≥1200px) */
 @media (min-width: 1200px) {
+  .containerCards {
+    &__carousel {
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      .cards {
+        width: 40rem;
+        height: 30rem;
+        perspective: 1000px;
+        cursor: pointer;
+        position: relative;
+
+        &.flipped .cards__frontContent {
+          transform: rotateY(180deg);
+        }
+
+        &.flipped .cards__backContent {
+          transform: rotateY(0deg);
+        }
+
+        .frontContent,
+        .backContent {
+          border-radius: 10px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          transition: transform 0.6s;
+          box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+          border: 2px solid #fdfdfb;
+        }
+
+        .frontContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 1rem;
+          background-color: #8c9c7c;
+          transform: rotateY(0deg);
+          &__category {
+            font-family: "cuprum";
+            font-size: 1.4rem;
+            text-decoration: underline;
+            color: #232826;
+          }
+          &__Img {
+            width: 35rem;
+            height: 19rem;
+            border-radius: 10px;
+          }
+          &__Title {
+            color: #232826;
+            font-size: 1.8rem;
+          }
+        }
+        .backContent {
+          background-color: #e8eacc;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          transform: rotateY(-180deg);
+          &__P {
+            padding: 0.5rem 1rem;
+            font-family: "cuprum";
+            color: #232826;
+            font-size: 1.5rem;
+          }
+          &__link {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1rem;
+            color: #232826;
+          }
+          .cardsIconsContainerLink {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .iconContainer {
+              display: flex;
+              flex-direction: row;
+              gap: 1rem;
+              .cardsIcons {
+                width: 4rem;
+                height: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1440px) {

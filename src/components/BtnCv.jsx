@@ -7,9 +7,9 @@ const BtnCv = () => {
   return (
     <div className="btnCv">
       <a href={Cv} download>
-        <button>Téléchargez mon CV !</button>
-      </a>
+        <button>Téléchargez mon CV</button>
         <FontAwesomeIcon icon={faDownload} className="iconBtnCv" />
+      </a>
     </div>
   );
 };
