@@ -20,21 +20,15 @@
 * {
   margin: 0;
   padding: 0;
-  /*
-  color: #fdfdfb;
-  color:#E8eacc;
-  color:#8c9c7c;
-  color:#232826;
-  color:#131114;
-
-  color:#1C0F12;
-  color:#6F7E86;
-  color:#B9CFD0;
-  color:#BEBCC8;
-  color:#E4E4E4;*/
 }
-#root{
+#root {
   display: flex;
   flex-direction: column;
-
 }
+
+  $color0: #FFF;
+  $color1:#E8eacc;
+  $color2:#8c9c7c;
+  $color3:#232826;
+  $color35:#232826f5;
+  $color4:#131114;

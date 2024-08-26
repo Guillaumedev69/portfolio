@@ -1,3 +1,4 @@
+@import "../index.scss";
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
   .footer {
@@ -7,19 +8,19 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: #e8eacc;
+    background-color: $color1;
     &__link {
       list-style: none;
       .footerLink {
         font-size: 1rem;
         text-align: center;
-        color: #131114;
+        color: $color4;
         text-decoration: none;
         font-family: "cuprum";
       }
     }
     &__info {
-      color: #131114;
+      color: $color4;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -40,19 +41,19 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: #e8eacc;
+    background-color: $color1;
     &__link {
       list-style: none;
       .footerLink {
         font-size: 1.25rem;
         text-align: center;
-        color: #131114;
+        color: $color4;
         text-decoration: none;
         font-family: "cuprum";
       }
     }
     &__info {
-      color: #131114;
+      color: $color4;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -70,7 +71,7 @@
     &__ink {
       font-size: 1.4rem;
       text-align: center;
-      color: #131114;
+      color: $color4;
       text-decoration: none;
       font-family: "cuprum";
     }
@@ -95,7 +96,7 @@
     .footerLink {
       font-size: 1.4rem;
       text-align: start;
-      color: #131114;
+      color: $color4;
       text-decoration: none;
       font-family: "cuprum";
     }

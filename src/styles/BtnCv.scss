@@ -1,3 +1,4 @@
+@import "../index.scss";
 .btnCv {
   display: flex;
   flex-direction: row;
@@ -10,6 +11,6 @@
   }
   a{
     text-decoration: underline ;
-    color: #131114;
+    color: $color4;
   }
 }

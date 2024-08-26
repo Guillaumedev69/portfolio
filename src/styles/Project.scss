@@ -1,3 +1,4 @@
+@import "../index.scss";
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
   .containerCards {
@@ -29,8 +30,8 @@
           height: 100%;
           backface-visibility: hidden;
           transition: transform 0.6s;
-          box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
-          border: 2px solid #fdfdfb;
+          box-shadow: 0rem 0rem 1rem 0.1rem $color0;
+          border: 2px solid $color0;
         }
 
         .frontContent {
@@ -39,14 +40,14 @@
           justify-content: space-evenly;
           align-items: center;
           gap: 1rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
 
           transform: rotateY(0deg);
           &__category {
             font-family: "cuprum";
             font-size: 1.1rem;
             text-decoration: underline;
-            color: #232826;
+            color: $color3;
           }
           &__Img {
             width: 16rem;
@@ -54,12 +55,12 @@
             border-radius: 10px;
           }
           &__Title {
-            color: #232826;
+            color: $color3;
             font-size: 1.25rem;
           }
         }
         .backContent {
-          background-color: #e8eacc;
+          background-color: $color1;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -69,13 +70,13 @@
           &__P {
             padding: 0.5rem 1rem;
             font-family: "cuprum";
-            color: #232826;
+            color: $color3;
           }
           &__link {
             font-weight: bold;
             font-style: italic;
             font-size: 0.8rem;
-            color: #232826;
+            color: $color3;
           }
           .cardsIconsContainerLink {
             .cardsIcons {
@@ -120,8 +121,8 @@
           height: 100%;
           backface-visibility: hidden;
           transition: transform 0.6s;
-          box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
-          border: 2px solid #fdfdfb;
+          box-shadow: 0rem 0rem 1rem 0.1rem $color0;
+          border: 2px solid $color0;
         }
 
         .frontContent {
@@ -130,14 +131,14 @@
           justify-content: space-evenly;
           align-items: center;
           gap: 1rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
 
           transform: rotateY(0deg);
           &__category {
             font-family: "cuprum";
             font-size: 1.3rem;
             text-decoration: underline;
-            color: #232826;
+            color: $color3;
           }
           &__Img {
             width: 25rem;
@@ -145,12 +146,12 @@
             border-radius: 10px;
           }
           &__Title {
-            color: #232826;
+            color: $color3;
             font-size: 1.5rem;
           }
         }
         .backContent {
-          background-color: #e8eacc;
+          background-color: $color1;
 
           display: flex;
           flex-direction: column;
@@ -161,14 +162,14 @@
           &__P {
             padding: 0.5rem 1rem;
             font-family: "cuprum";
-            color: #232826;
+            color: $color3;
             font-size: 1.5rem;
           }
           &__link {
             font-weight: bold;
             font-style: italic;
             font-size: 1rem;
-            color: #232826;
+            color: $color3;
           }
           .cardsIconsContainerLink {
             display: flex;
@@ -221,8 +222,8 @@
           height: 100%;
           backface-visibility: hidden;
           transition: transform 0.6s;
-          box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
-          border: 2px solid #fdfdfb;
+          box-shadow: 0rem 0rem 1rem 0.1rem $color0;
+          border: 2px solid $color0;
         }
 
         .frontContent {
@@ -231,14 +232,14 @@
           justify-content: space-evenly;
           align-items: center;
           gap: 1rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
 
           transform: rotateY(0deg);
           &__category {
             font-family: "cuprum";
             font-size: 1.3rem;
             text-decoration: underline;
-            color: #232826;
+            color: $color3;
           }
           &__Img {
             width: 35rem;
@@ -246,12 +247,12 @@
             border-radius: 10px;
           }
           &__Title {
-            color: #232826;
+            color: $color3;
             font-size: 1.5rem;
           }
         }
         .backContent {
-          background-color: #e8eacc;
+          background-color: $color1;
 
           display: flex;
           flex-direction: column;
@@ -262,14 +263,14 @@
           &__P {
             padding: 0.5rem 1rem;
             font-family: "cuprum";
-            color: #232826;
+            color: $color3;
             font-size: 1.5rem;
           }
           &__link {
             font-weight: bold;
             font-style: italic;
             font-size: 1rem;
-            color: #232826;
+            color: $color3;
           }
           .cardsIconsContainerLink {
             display: flex;
@@ -321,8 +322,8 @@
         height: 100%;
         backface-visibility: hidden;
         transition: transform 0.6s;
-        box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
-          border: 2px solid #fdfdfb;
+        box-shadow: 0rem 0rem 1rem 0.1rem $color0;
+          border: 2px solid $color0;
       }
 
       .frontContent {
@@ -331,13 +332,13 @@
         justify-content: space-evenly;
         align-items: center;
         gap: 1rem;
-        background-color: #8c9c7c;
+        background-color: $color2;
         transform: rotateY(0deg);
         &__category {
           font-family: "cuprum";
           font-size: 1.4rem;
           text-decoration: underline;
-          color: #232826;
+          color: $color3;
         }
         &__Img {
           width: 40rem;
@@ -345,12 +346,12 @@
           border-radius: 10px;
         }
         &__Title {
-          color: #232826;
+          color: $color3;
           font-size: 1.8rem;
         }
       }
       .backContent {
-        background-color: #e8eacc;
+        background-color: $color1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -360,14 +361,14 @@
         &__P {
           padding: 0.5rem 1rem;
           font-family: "cuprum";
-          color: #232826;
+          color: $color3;
           font-size: 1.5rem;
         }
         &__link {
           font-weight: bold;
           font-style: italic;
           font-size: 1rem;
-          color: #232826;
+          color: $color3;
         }
         .cardsIconsContainerLink {
           display: flex;
@@ -420,8 +421,8 @@
           height: 100%;
           backface-visibility: hidden;
           transition: transform 0.6s;
-          box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
-          border: 2px solid #fdfdfb;
+          box-shadow: 0rem 0rem 1rem 0.1rem $color0;
+          border: 2px solid $color0;
         }
 
         .frontContent {
@@ -430,13 +431,13 @@
           justify-content: space-evenly;
           align-items: center;
           gap: 1rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
           transform: rotateY(0deg);
           &__category {
             font-family: "cuprum";
             font-size: 1.4rem;
             text-decoration: underline;
-            color: #232826;
+            color: $color3;
           }
           &__Img {
             width: 35rem;
@@ -444,12 +445,12 @@
             border-radius: 10px;
           }
           &__Title {
-            color: #232826;
+            color: $color3;
             font-size: 1.8rem;
           }
         }
         .backContent {
-          background-color: #e8eacc;
+          background-color: $color1;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -459,14 +460,14 @@
           &__P {
             padding: 0.5rem 1rem;
             font-family: "cuprum";
-            color: #232826;
+            color: $color3;
             font-size: 1.5rem;
           }
           &__link {
             font-weight: bold;
             font-style: italic;
             font-size: 1rem;
-            color: #232826;
+            color: $color3;
           }
           .cardsIconsContainerLink {
             display: flex;

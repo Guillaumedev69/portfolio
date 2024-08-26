@@ -1,3 +1,4 @@
+@import "../index.scss";
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
   .containerBulle {
@@ -6,24 +7,24 @@
     .btnContact {
       cursor: pointer;
       border-radius: 40px;
-      border: 1px solid #232826;
-      box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+      border: 1px solid $color3;
+      box-shadow: 0rem 0rem 1rem 0.1rem $color0;
       padding: 0.65rem 1.25rem;
       font-family: "Montserrat";
       font-weight: bold;
       font-size: 1rem;
       width: 11rem;
-      background-color: #8c9c7c;
+      background-color: $color2;
       &__bulle {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        background-color: #8c9c7c;
+        background-color: $color2;
         border-radius: 40px;
         padding: 0.65rem 1.25rem;
-        box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+        box-shadow: 0rem 0rem 1rem 0.1rem $color0;
         width: 8.5rem;
         button {
           
@@ -33,7 +34,7 @@
       }
       &__icon{
         cursor: pointer;
-      color: #232826;
+      color: $color3;
       font-size: 1.2rem;}
     }
   }
@@ -47,24 +48,24 @@
     .btnContact {
       cursor: pointer;
       border-radius: 40px;
-      border: 1px solid #232826;
-      box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+      border: 1px solid $color3;
+      box-shadow: 0rem 0rem 1rem 0.1rem $color0;
       padding: 0.65rem 1.25rem;
       font-family: "Montserrat";
       font-weight: bold;
       font-size: 1rem;
       width: 11rem;
-      background-color: #8c9c7c;
+      background-color: $color2;
       &__bulle {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        background-color: #8c9c7c;
+        background-color: $color2;
         border-radius: 40px;
         padding: 0.65rem 1.25rem;
-        box-shadow: 0rem 0rem 1rem 0.1rem #fdfdfb;
+        box-shadow: 0rem 0rem 1rem 0.1rem $color0;
         width: 8.5rem;
         button {
           
@@ -74,7 +75,7 @@
       }
       &__icon{
         cursor: pointer;
-      color: #232826;
+      color: $color3;
       font-size: 1.2rem;}
     }
   }

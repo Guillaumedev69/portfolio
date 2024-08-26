@@ -7,7 +7,7 @@
     top: 0;
     display: flex;
     flex-direction: column;
-    background-color: #232826f5;
+    background-color: $color35;
     padding-top: 0.5rem;
     .logo-header {
       font-family: "Montserrat";
@@ -16,13 +16,13 @@
         text-decoration: none;
       }
       h1 {
-        color: #e8eacc;
+        color: $color1;
         font-size: 1.5rem;
         font-weight: bold;
       }
       p {
         font-size: 1rem;
-        color: #8c9c7c;
+        color: $color2;
       }
     }
   }
@@ -36,7 +36,7 @@
     top: 0;
     display: flex;
     flex-direction: column;
-    background-color: #232826f5;
+    background-color: $color35;
     padding-top: 0.5rem;
     .logo-header {
       font-family: "Montserrat";
@@ -45,13 +45,13 @@
         text-decoration: none;
       }
       h1 {
-        color: #e8eacc;
+        color: $color1;
         font-size: 2rem;
         font-weight: bold;
       }
       p {
         font-size: 1.25rem;
-        color: #8c9c7c;
+        color: $color2;
       }
     }
   }
@@ -67,7 +67,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
-    background-color: #232826f5;
+    background-color: $color35;
     padding: 0.5rem 1rem;
     .logo-header {
       font-family: "Montserrat";
@@ -76,13 +76,13 @@
         text-decoration: none;
       }
       h1 {
-        color: #e8eacc;
+        color: $color1;
         font-size: 2.3rem;
         font-weight: bold;
       }
       p {
         font-size: 1.5rem;
-        color: #8c9c7c;
+        color: $color2;
       }
     }
   }

@@ -1,3 +1,4 @@
+@import "../index.scss";
 /* Extra small devices (phones, <576px) */
 @media (max-width: 575.98px) {
   main {
@@ -6,9 +7,9 @@
     flex-direction: column;
     gap: 4rem;
     text-align: center;
-    background-color: #232826;
+    background-color: $color3;
     .sectionIntro {
-      background-color: #232826;
+      background-color: $color3;
       padding-bottom: 5rem;
       .containericonIntro {
         padding-top: 2rem;
@@ -19,7 +20,7 @@
       .pIntro,
       .iconIntro {
         padding: 1rem;
-        color: #e8eacc;
+        color: $color1;
         text-align: center;
         font-size: 1.2rem;
       }
@@ -33,11 +34,11 @@
           font-weight: bold;
           font-family: "cuprum";
           font-size: 1.3rem;
-          color: #232826;
-          border: 1px solid #e8eacc;
+          color: $color3;
+          border: 1px solid $color1;
           border-radius: 5px;
           padding: 0 0.5rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
         }
       }
     }
@@ -51,13 +52,13 @@
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-      background-color: #e8eacc;
+      background-color: $color1;
       .sectionInfoContent {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        color: #131114;
+        color: $color4;
         .containerTitlePBtn{
           display: flex;
           flex-direction: column;
@@ -73,36 +74,36 @@
     }
     .sectionProject {
       .projectTitle {
-        color: #e8eacc;
+        color: $color1;
       }
       padding: 6rem 0.5rem 0 0.5rem;
-      background-color: #232826;
-      color: #e8eacc;
+      background-color: $color3;
+      color: $color1;
     }
     .sectionSkills {
-      background-color: #8c9c7c;
+      background-color: $color2;
       padding: 6rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
-        color: #232826;
+        color: $color3;
       }
     }
     .sectionContact {
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      background-color: #232826;
+      background-color: $color3;
       padding: 3rem 0.5rem;
       .contactTitle {
-        color: #8c9c7c;
+        color: $color2;
         margin-bottom: 2rem;
       }
       p {
-        color: #8c9c7c;
+        color: $color2;
       }
       a {
         .iconA {
           position: relative;
-          color: #e8eacc;
+          color: $color1;
           font-size: 2rem;
           top: 1rem;
           animation: bounce 2s infinite ease-in-out;
@@ -130,9 +131,9 @@
     flex-direction: column;
     gap: 4rem;
     text-align: center;
-    background-color: #232826;
+    background-color: $color3;
     .sectionIntro {
-      background-color: #232826;
+      background-color: $color3;
       padding-bottom: 5rem;
       .containericonIntro {
         padding-top: 2rem;
@@ -143,7 +144,7 @@
       .pIntro,
       .iconIntro {
         padding: 1rem;
-        color: #e8eacc;
+        color: $color1;
         text-align: center;
         font-size: 1.5rem;
       }
@@ -157,16 +158,16 @@
           font-weight: bold;
           font-family: "cuprum";
           font-size: 1.4rem;
-          color: #232826;
-          border: 1px solid #e8eacc;
+          color: $color3;
+          border: 1px solid $color1;
           border-radius: 5px;
           padding: 0 0.5rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
         }
       }
     }
     .aboutTitle {
-      color: #232826;
+      color: $color3;
       font-size: 1.8rem;
       padding-bottom: 1rem;
     }
@@ -176,13 +177,13 @@
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-      background-color: #e8eacc;
+      background-color: $color1;
       .sectionInfoContent {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        color: #131114;
+        color: $color4;
         .containerTitlePBtn{
           display: flex;
           flex-direction: column;
@@ -201,18 +202,18 @@
     }
     .sectionProject {
       .projectTitle {
-        color: #e8eacc;
+        color: $color1;
         font-size: 2rem;
       }
       padding: 8rem 0.5rem 0 0.5rem;
-      background-color: #232826;
-      color: #e8eacc;
+      background-color: $color3;
+      color: $color1;
     }
     .sectionSkills {
-      background-color: #8c9c7c;
+      background-color: $color2;
       padding: 8rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
-        color: #232826;
+        color: $color3;
         font-size: 2rem;
       }
     }
@@ -220,10 +221,10 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      background-color: #232826;
+      background-color: $color3;
       padding: 8rem 2rem 6rem 2rem;
       .contactTitle {
-        color: #8c9c7c;
+        color: $color2;
         margin-bottom: 2rem;
       }
       p {
@@ -232,7 +233,7 @@
       a {
         .iconA {
           position: relative;
-          color: #e8eacc;
+          color: $color1;
           font-size: 2rem;
           top: 1rem;
           animation: bounce 2s infinite ease-in-out;
@@ -260,9 +261,9 @@
     flex-direction: column;
     gap: 4rem;
     text-align: center;
-    background-color: #232826;
+    background-color: $color3;
     .sectionIntro {
-      background-color: #232826;
+      background-color: $color3;
       padding-bottom: 5rem;
       .containericonIntro {
         padding-top: 2rem;
@@ -273,7 +274,7 @@
       .pIntro,
       .iconIntro {
         padding: 1rem;
-        color: #e8eacc;
+        color: $color1;
         text-align: center;
         font-size: 1.5rem;
       }
@@ -287,16 +288,16 @@
           font-weight: bold;
           font-family: "cuprum";
           font-size: 1.4rem;
-          color: #232826;
-          border: 1px solid #e8eacc;
+          color: $color3;
+          border: 1px solid $color1;
           border-radius: 5px;
           padding: 0 0.5rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
         }
       }
     }
     .aboutTitle {
-      color: #232826;
+      color: $color3;
       font-size: 1.8rem;
       padding-bottom: 1rem;
     }
@@ -306,13 +307,13 @@
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-      background-color: #e8eacc;
+      background-color: $color1;
       .sectionInfoContent {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        color: #131114;
+        color: $color4;
         .imgInfo {
           width: 20rem;
           height: 20rem;
@@ -324,18 +325,18 @@
     }
     .sectionProject {
       .projectTitle {
-        color: #e8eacc;
+        color: $color1;
         font-size: 2rem;
       }
       padding: 8rem 0.5rem 0 0.5rem;
-      background-color: #232826;
-      color: #e8eacc;
+      background-color: $color3;
+      color: $color1;
     }
     .sectionSkills {
-      background-color: #8c9c7c;
+      background-color: $color2;
       padding: 8rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
-        color: #232826;
+        color: $color3;
         font-size: 2rem;
       }
     }
@@ -343,23 +344,23 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      background-color: #232826;
+      background-color: $color3;
       padding: 8rem 6rem 6rem 6rem;
       label {
         font-size: 1.5rem;
       }
       .contactTitle {
-        color: #8c9c7c;
+        color: $color2;
         margin-bottom: 2rem;
         font-size: 2rem;
       }
       p {
-        color: #8c9c7c;
+        color: $color2;
       }
       a {
         .iconA {
           position: relative;
-          color: #e8eacc;
+          color: $color1;
           font-size: 2rem;
           top: 1rem;
           animation: bounce 2s infinite ease-in-out;
@@ -387,9 +388,9 @@
     flex-direction: column;
     gap: 4rem;
     text-align: center;
-    background-color: #232826;
+    background-color: $color3;
     .sectionIntro {
-      background-color: #232826;
+      background-color: $color3;
       padding-bottom: 5rem;
       .containericonIntro {
         padding-top: 2rem;
@@ -400,7 +401,7 @@
       .pIntro,
       .iconIntro {
         padding: 1rem;
-        color: #e8eacc;
+        color: $color1;
         text-align: center;
         font-size: 1.5rem;
       }
@@ -414,16 +415,16 @@
           font-weight: bold;
           font-family: "cuprum";
           font-size: 1.4rem;
-          color: #232826;
-          border: 1px solid #e8eacc;
+          color: $color3;
+          border: 1px solid $color1;
           border-radius: 5px;
           padding: 0 0.5rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
         }
       }
     }
     .aboutTitle {
-      color: #232826;
+      color: $color3;
       font-size: 2rem;
       padding-bottom: 1rem;
     }
@@ -433,13 +434,13 @@
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-      background-color: #e8eacc;
+      background-color: $color1;
       .sectionInfoContent {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        color: #131114;
+        color: $color4;
         .imgInfo {
           width: 20rem;
           height: 20rem;
@@ -451,18 +452,18 @@
     }
     .sectionProject {
       .projectTitle {
-        color: #e8eacc;
+        color: $color1;
         font-size: 2rem;
       }
       padding: 8rem 0.5rem 0 0.5rem;
-      background-color: #232826;
-      color: #e8eacc;
+      background-color: $color3;
+      color: $color1;
     }
     .sectionSkills {
-      background-color: #8c9c7c;
+      background-color: $color2;
       padding: 8rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
-        color: #232826;
+        color: $color3;
         font-size: 2rem;
       }
     }
@@ -470,23 +471,23 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      background-color: #232826;
+      background-color: $color3;
       padding: 8rem 16rem 6rem 16rem;
       label {
         font-size: 1.5rem;
       }
       .contactTitle {
-        color: #8c9c7c;
+        color: $color2;
         margin-bottom: 2rem;
         font-size: 2rem;
       }
       p {
-        color: #8c9c7c;
+        color: $color2;
       }
       a {
         .iconA {
           position: relative;
-          color: #e8eacc;
+          color: $color1;
           font-size: 2rem;
           top: 1rem;
           animation: bounce 2s infinite ease-in-out;
@@ -517,9 +518,9 @@
     flex-direction: column;
     gap: 4rem;
     text-align: center;
-    background-color: #232826;
+    background-color: $color3;
     .sectionIntro {
-      background-color: #232826;
+      background-color: $color3;
       padding-bottom: 5rem;
       .containericonIntro {
         padding-top: 2rem;
@@ -530,7 +531,7 @@
       .pIntro,
       .iconIntro {
         padding: 1rem;
-        color: #e8eacc;
+        color: $color1;
         text-align: center;
         font-size: 1.8rem;
       }
@@ -544,16 +545,16 @@
           font-weight: bold;
           font-family: "cuprum";
           font-size: 1.8rem;
-          color: #232826;
-          border: 1px solid #e8eacc;
+          color: $color3;
+          border: 1px solid $color1;
           border-radius: 5px;
           padding: 0 0.5rem;
-          background-color: #8c9c7c;
+          background-color: $color2;
         }
       }
     }
     .aboutTitle {
-      color: #232826;
+      color: $color3;
       font-size: 2.5rem;
       padding-bottom: 1rem;
     }
@@ -563,7 +564,7 @@
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-      background-color: #e8eacc;
+      background-color: $color1;
       .containerBulle{
         .btnContact{
           width: 15rem;
@@ -583,7 +584,7 @@
         display: flex;
         flex-direction: row;
         gap: 5rem;
-        color: #131114;
+        color: $color4;
         .imgInfo {
           width: 25rem;
           height: 25rem;
@@ -603,18 +604,18 @@
     }
     .sectionProject {
       .projectTitle {
-        color: #e8eacc;
+        color: $color1;
         font-size: 2.5rem;
       }
       padding: 8rem 0.5rem 0 0.5rem;
-      background-color: #232826;
-      color: #e8eacc;
+      background-color: $color3;
+      color: $color1;
     }
     .sectionSkills {
-      background-color: #8c9c7c;
+      background-color: $color2;
       padding: 8rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
-        color: #232826;
+        color: $color3;
         font-size: 2.5rem;
       }
     }
@@ -622,22 +623,22 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      background-color: #232826;
+      background-color: $color3;
       padding: 8rem 25rem 6rem 25rem;
     
 
       .contactTitle {
-        color: #8c9c7c;
+        color: $color2;
         margin-bottom: 2rem;
         font-size: 2.5rem;
       }
       p {
-        color: #8c9c7c;
+        color: $color2;
       }
       a {
         .iconA {
           position: relative;
-          color: #e8eacc;
+          color: $color1;
           font-size: 2rem;
           top: 1rem;
           animation: bounce 2s infinite ease-in-out;
