@@ -59,7 +59,7 @@
         align-items: center;
         gap: 1rem;
         color: $color4;
-        .containerTitlePBtn{
+        .containerTitlePBtn {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -73,12 +73,12 @@
       }
     }
     .sectionProject {
-      .projectTitle {
-        color: $color1;
-      }
       padding: 6rem 0.5rem 0 0.5rem;
       background-color: $color3;
       color: $color1;
+      .projectTitle {
+        color: $color1;
+      }
     }
     .sectionSkills {
       background-color: $color2;
@@ -184,7 +184,7 @@
         align-items: center;
         gap: 1rem;
         color: $color4;
-        .containerTitlePBtn{
+        .containerTitlePBtn {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -201,13 +201,13 @@
       }
     }
     .sectionProject {
+      padding: 8rem 0.5rem 0 0.5rem;
+      background-color: $color3;
+      color: $color1;
       .projectTitle {
         color: $color1;
         font-size: 2rem;
       }
-      padding: 8rem 0.5rem 0 0.5rem;
-      background-color: $color3;
-      color: $color1;
     }
     .sectionSkills {
       background-color: $color2;
@@ -324,13 +324,13 @@
       }
     }
     .sectionProject {
+      padding: 8rem 0.5rem 0 0.5rem;
+      background-color: $color3;
+      color: $color1;
       .projectTitle {
         color: $color1;
         font-size: 2rem;
       }
-      padding: 8rem 0.5rem 0 0.5rem;
-      background-color: $color3;
-      color: $color1;
     }
     .sectionSkills {
       background-color: $color2;
@@ -451,13 +451,13 @@
       }
     }
     .sectionProject {
+      padding: 8rem 0.5rem 0 0.5rem;
+      background-color: $color3;
+      color: $color1;
       .projectTitle {
         color: $color1;
         font-size: 2rem;
       }
-      padding: 8rem 0.5rem 0 0.5rem;
-      background-color: $color3;
-      color: $color1;
     }
     .sectionSkills {
       background-color: $color2;
@@ -565,18 +565,18 @@
       align-items: center;
       gap: 1rem;
       background-color: $color1;
-      .containerBulle{
-        .btnContact{
+      .containerBulle {
+        .btnContact {
           width: 15rem;
           font-size: 1.5rem;
-          &__icon{
+          &__icon {
             font-size: 2rem;
           }
         }
       }
-      .btnCv{
+      .btnCv {
         font-size: 1.5rem;
-        button{
+        button {
           font-size: 1.1rem;
         }
       }
@@ -594,7 +594,7 @@
           font-size: 1.2rem;
           max-width: 50rem;
         }
-        .containerTitlePBtn{
+        .containerTitlePBtn {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -603,13 +603,13 @@
       }
     }
     .sectionProject {
+      padding: 8rem 0.5rem 0 0.5rem;
+      background-color: $color3;
+      color: $color1;
       .projectTitle {
         color: $color1;
         font-size: 2.5rem;
       }
-      padding: 8rem 0.5rem 0 0.5rem;
-      background-color: $color3;
-      color: $color1;
     }
     .sectionSkills {
       background-color: $color2;
@@ -625,7 +625,6 @@
       gap: 2rem;
       background-color: $color3;
       padding: 8rem 25rem 6rem 25rem;
-    
 
       .contactTitle {
         color: $color2;

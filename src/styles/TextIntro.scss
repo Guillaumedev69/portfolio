@@ -1,0 +1,18 @@
+@import "../index.scss";
+.console-container {
+  font-family: "Cuprum";
+  font-size: 2.5rem;
+  text-align: center;
+  color: $color1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}

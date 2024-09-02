@@ -9,22 +9,18 @@ import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import BtnCv from "./BtnCv";
 import Header from "./Header";
-
+import TextIntro from "./TextIntro";
 
 const Main = () => {
   return (
     <main className="main" id="main">
       <Header />
       <section className="sectionIntro">
+        <TextIntro />
         <p className="pIntro">
-          Création, Optimisation, Maintenance et Développement Web <br />
           <br />
-          Vous êtes à la recherche d’un développeur web passionné pour réaliser
-          <a href="#project">
-            {" "}
-            <span>vos projets</span>
-          </a>{" "}
-          ou compléter votre équipe ?
+          Vous êtes à la recherche d&apos;un développeur web passionné pour réaliser
+          vos projets ou compléter votre équipe ?
           <br />
           <br />
           Découvrez mon profil
@@ -89,7 +85,6 @@ const Main = () => {
           <FontAwesomeIcon className="iconA" icon={faAnglesUp} title="up" />
         </a>
       </section>
-      
     </main>
   );
 };
