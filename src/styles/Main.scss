@@ -5,7 +5,6 @@
     font-family: "Montserrat";
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     text-align: center;
     background-color: $color3;
     .sectionIntro {
@@ -68,17 +67,17 @@
       }
     }
     .sectionProject {
-      padding: 6rem 0.5rem 0 0.5rem;
       background-color: $color3;
       color: $color1;
       .projectTitle {
+       padding: 2rem 0 2rem 0;
         color: $color1;
       }
     }
     .sectionSkills {
       background-color: $color2;
-      padding: 6rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
+        padding-bottom: 2rem;
         color: $color3;
       }
     }
@@ -124,7 +123,6 @@
     font-family: "Montserrat";
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     text-align: center;
     background-color: $color3;
     .sectionIntro {
@@ -191,20 +189,20 @@
       }
     }
     .sectionProject {
-      padding: 8rem 0.5rem 0 0.5rem;
       background-color: $color3;
       color: $color1;
       .projectTitle {
         color: $color1;
         font-size: 2rem;
+        padding: 4rem 0 2rem 0;
       }
     }
     .sectionSkills {
       background-color: $color2;
-      padding: 8rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
         color: $color3;
         font-size: 2rem;
+        padding-bottom: 2rem;
       }
     }
     .sectionContact {
@@ -249,7 +247,6 @@
     font-family: "Montserrat";
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     text-align: center;
     background-color: $color3;
     .sectionIntro {
@@ -308,7 +305,6 @@
       }
     }
     .sectionProject {
-      padding: 8rem 0.5rem 0 0.5rem;
       background-color: $color3;
       color: $color1;
       .projectTitle {
@@ -318,7 +314,6 @@
     }
     .sectionSkills {
       background-color: $color2;
-      padding: 8rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
         color: $color3;
         font-size: 2rem;
@@ -370,7 +365,6 @@
     font-family: "Montserrat";
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     text-align: center;
     background-color: $color3;
     .sectionIntro {
@@ -428,7 +422,6 @@
       }
     }
     .sectionProject {
-      padding: 8rem 0.5rem 0 0.5rem;
       background-color: $color3;
       color: $color1;
       .projectTitle {
@@ -438,7 +431,6 @@
     }
     .sectionSkills {
       background-color: $color2;
-      padding: 8rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
         color: $color3;
         font-size: 2rem;
@@ -493,7 +485,6 @@
     font-family: "Montserrat";
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     text-align: center;
     background-color: $color3;
     .sectionIntro {
@@ -573,7 +564,6 @@
       }
     }
     .sectionProject {
-      padding: 8rem 0.5rem 0 0.5rem;
       background-color: $color3;
       color: $color1;
       .projectTitle {
@@ -583,7 +573,6 @@
     }
     .sectionSkills {
       background-color: $color2;
-      padding: 8rem 0.5rem 3rem 0.5rem;
       .skillsTitle {
         color: $color3;
         font-size: 2.5rem;

@@ -1,0 +1,47 @@
+@import "../index.scss";
+@media (max-width: 575.98px) {
+    .custom-shape-divider-bottom-1725370299 {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1725370299 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 100px;
+    }
+    
+    .custom-shape-divider-bottom-1725370299 .shape-fill {
+        fill: $color3;
+    }
+    
+    
+}
+@media (min-width: 576px){
+    .custom-shape-divider-bottom-1725370299 {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1725370299 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 200px;
+    }
+    
+    .custom-shape-divider-bottom-1725370299 .shape-fill {
+        fill: $color3;
+    }
+}

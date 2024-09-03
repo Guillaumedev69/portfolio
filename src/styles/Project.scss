@@ -3,7 +3,7 @@
 @media (max-width: 575.98px) {
   .containerCards {
     &__carousel {
-      padding-top: 2rem;
+      padding: 2rem 0.5rem 4rem 0.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -94,7 +94,7 @@
 @media (min-width: 576px) {
   .containerCards {
     &__carousel {
-      padding-top: 2rem;
+      padding: 2rem 0.5rem 4rem 0.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -195,7 +195,6 @@
 @media (min-width: 768px) {
   .containerCards {
     &__carousel {
-      padding-top: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -295,7 +294,6 @@
 /* Large devices (desktops, ≥992px) */
 @media (min-width: 992px) {
   .containerCards {
-    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;

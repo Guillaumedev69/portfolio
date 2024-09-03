@@ -7,8 +7,8 @@
     .btnContact {
       cursor: pointer;
       border-radius: 40px;
-      border: 1px solid $color3;
-      box-shadow: 0rem 0rem 1rem 0.1rem $color0;
+      border: 1px solid $color2;
+      box-shadow: 0rem 0.1rem 1rem 0.1rem $color2;
       padding: 0.65rem 1.25rem;
       font-family: "Montserrat";
       font-weight: bold;
@@ -16,6 +16,7 @@
       width: 11rem;
       background-color: $color2;
       &__bulle {
+        border: 1px solid $color2;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -24,7 +25,7 @@
         background-color: $color2;
         border-radius: 40px;
         padding: 0.65rem 1.25rem;
-        box-shadow: 0rem 0rem 1rem 0.1rem $color0;
+        box-shadow: 0rem 0.1rem 1rem 0.1rem $color2;
         width: 8.5rem;
         button {
           

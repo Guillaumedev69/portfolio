@@ -10,6 +10,9 @@ import BtnCv from "./BtnCv";
 import Header from "./Header";
 import TextIntro from "./TextIntro";
 import EndSectionOne from "./EndSectionOne";
+import EndSectionTwo from "./EndSectionTwo";
+import EndSectionThree from "./EndSectionThree";
+import EndSectionFour from "./EndSectionFour";
 
 const Main = () => {
   return (
@@ -27,7 +30,7 @@ const Main = () => {
         </p>
       </section>
       <section className="sectionInfo" id="about">
-      <EndSectionOne />
+        <EndSectionOne />
         <div className="sectionInfoContent">
           <div className="containerTitlePBtn">
             <div className="containerTitle">
@@ -64,12 +67,15 @@ const Main = () => {
         </div>
       </section>
       <section className="sectionProject" id="project">
+        <EndSectionTwo />
         <h2 className="projectTitle">Projets</h2>
         <Project />
       </section>
       <section className="sectionSkills" id="skills">
+        <EndSectionThree />
         <h2 className="skillsTitle">SKILLS</h2>
         <Skills />
+        <EndSectionFour/>
       </section>
       <section className="sectionContact" id="contact">
         <h2 className="contactTitle">CONTACT</h2>

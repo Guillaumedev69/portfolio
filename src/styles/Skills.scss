@@ -52,6 +52,7 @@
 
 @media (max-width: 575.98px) {
   .skillsContainer {
+    padding: 0 0.5rem 3rem 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -79,6 +80,7 @@
 /* Small devices (landscape phones, ≥576px) */
 @media (min-width: 576px) {
   .skillsContainer {
+    padding: 0 0.5rem 3rem 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
