@@ -11,12 +11,6 @@
     .sectionIntro {
       background-color: $color3;
       padding-bottom: 5rem;
-      .containericonIntro {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-      }
       .pIntro,
       .iconIntro {
         padding: 1rem;
@@ -47,7 +41,7 @@
       padding-bottom: 1rem;
     }
     .sectionInfo {
-      padding: 6rem 0.5rem 1rem 0.5rem;
+      padding-bottom: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -60,6 +54,7 @@
         gap: 1rem;
         color: $color4;
         .containerTitlePBtn {
+          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -135,12 +130,6 @@
     .sectionIntro {
       background-color: $color3;
       padding-bottom: 5rem;
-      .containericonIntro {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-      }
       .pIntro,
       .iconIntro {
         padding: 1rem;
@@ -172,7 +161,7 @@
       padding-bottom: 1rem;
     }
     .sectionInfo {
-      padding: 8rem 1rem 1rem 1rem;
+      padding-bottom: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -189,6 +178,7 @@
           flex-direction: column;
           align-items: center;
           gap: 1rem;
+          padding: 0 1rem;
         }
         .imgInfo {
           width: 20rem;
@@ -265,12 +255,6 @@
     .sectionIntro {
       background-color: $color3;
       padding-bottom: 5rem;
-      .containericonIntro {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-      }
       .pIntro,
       .iconIntro {
         padding: 1rem;
@@ -302,7 +286,7 @@
       padding-bottom: 1rem;
     }
     .sectionInfo {
-      padding: 8rem 1rem 1rem 1rem;
+      padding-bottom: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -392,12 +376,6 @@
     .sectionIntro {
       background-color: $color3;
       padding-bottom: 5rem;
-      .containericonIntro {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-      }
       .pIntro,
       .iconIntro {
         padding: 1rem;
@@ -429,7 +407,6 @@
       padding-bottom: 1rem;
     }
     .sectionInfo {
-      padding: 8rem 1rem 1rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -522,12 +499,6 @@
     .sectionIntro {
       background-color: $color3;
       padding-bottom: 5rem;
-      .containericonIntro {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-      }
       .pIntro,
       .iconIntro {
         padding: 1rem;
@@ -559,7 +530,6 @@
       padding-bottom: 1rem;
     }
     .sectionInfo {
-      padding: 8rem 1rem 1rem 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;

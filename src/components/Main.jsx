@@ -6,10 +6,10 @@ import Project from "./Project";
 import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
-import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import BtnCv from "./BtnCv";
 import Header from "./Header";
 import TextIntro from "./TextIntro";
+import EndSectionOne from "./EndSectionOne";
 
 const Main = () => {
   return (
@@ -19,18 +19,15 @@ const Main = () => {
         <TextIntro />
         <p className="pIntro">
           <br />
-          Vous êtes à la recherche d&apos;un développeur web passionné pour réaliser
-          vos projets ou compléter votre équipe ?
+          Vous êtes à la recherche d&apos;un développeur web passionné pour
+          réaliser vos projets ou compléter votre équipe ?
           <br />
           <br />
           Découvrez mon profil
         </p>
-        <div className="containericonIntro">
-          <FontAwesomeIcon icon={faAnglesDown} className="iconIntro" />
-          <FontAwesomeIcon icon={faAnglesDown} className="iconIntro" />
-        </div>
       </section>
       <section className="sectionInfo" id="about">
+      <EndSectionOne />
         <div className="sectionInfoContent">
           <div className="containerTitlePBtn">
             <div className="containerTitle">
