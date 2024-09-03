@@ -126,11 +126,14 @@
       a {
         text-decoration: none;
       }
-      .navLink {
-        color: #e8eacc;
+      
+      .navLink :hover{
+        color: $color2;
+        fill: $color2;
+        position: relative;
+        top: 1px;
       }
     }
-
     &__container-link-page {
       gap: 1.5rem;
       font-size: 1.8rem;

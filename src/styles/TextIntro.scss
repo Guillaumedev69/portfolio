@@ -1,6 +1,6 @@
 @import "../index.scss";
 .hidden {
-  opacity:0;
+  opacity: 0;
 }
 .console-container {
   font-family: "Cuprum";
@@ -16,4 +16,9 @@
 .console-underscore {
   display: inline-block;
   position: relative;
+}
+@media (min-width: 992px) {
+  .console-container {
+    font-size: 4rem;
+  }
 }

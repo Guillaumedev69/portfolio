@@ -30,8 +30,6 @@
           height: 100%;
           backface-visibility: hidden;
           transition: transform 0.6s;
-          box-shadow: 0rem 0rem 1rem 0.1rem $color0;
-          border: 2px solid $color0;
         }
 
         .frontContent {
@@ -41,7 +39,7 @@
           align-items: center;
           gap: 1rem;
           background-color: $color2;
-
+          box-shadow: 3px 3px 5px 1px $color1;
           transform: rotateY(0deg);
           &__category {
             font-family: "cuprum";
@@ -61,6 +59,7 @@
         }
         .backContent {
           background-color: $color1;
+          box-shadow: 3px 3px 5px 1px $color2;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -121,8 +120,6 @@
           height: 100%;
           backface-visibility: hidden;
           transition: transform 0.6s;
-          box-shadow: 0rem 0rem 1rem 0.1rem $color0;
-          border: 2px solid $color0;
         }
 
         .frontContent {
@@ -132,7 +129,7 @@
           align-items: center;
           gap: 1rem;
           background-color: $color2;
-
+          box-shadow: 3px 3px 5px 1px $color1;
           transform: rotateY(0deg);
           &__category {
             font-family: "cuprum";
@@ -152,7 +149,7 @@
         }
         .backContent {
           background-color: $color1;
-
+          box-shadow: 3px 3px 5px 1px $color2;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -221,8 +218,6 @@
           height: 100%;
           backface-visibility: hidden;
           transition: transform 0.6s;
-          box-shadow: 0rem 0rem 1rem 0.1rem $color0;
-          border: 2px solid $color0;
         }
 
         .frontContent {
@@ -320,8 +315,6 @@
         height: 100%;
         backface-visibility: hidden;
         transition: transform 0.6s;
-        box-shadow: 0rem 0rem 1rem 0.1rem $color0;
-          border: 2px solid $color0;
       }
 
       .frontContent {
@@ -419,8 +412,6 @@
           height: 100%;
           backface-visibility: hidden;
           transition: transform 0.6s;
-          box-shadow: 0rem 0rem 1rem 0.1rem $color0;
-          border: 2px solid $color0;
         }
 
         .frontContent {
