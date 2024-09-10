@@ -1,0 +1,26 @@
+@import "../index.scss";
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  button {
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: $color3;
+    border: 1px solid $color1;
+    border-radius: 10px;
+    color: $color1;
+    font-size: 1.4rem;
+    font-family: "cuprum";
+  }
+  button:hover {
+    background-color: $color1;
+    color: $color3;
+  }
+  button.active {
+    background-color: $color1;
+    color: $color3;
+  }
+}

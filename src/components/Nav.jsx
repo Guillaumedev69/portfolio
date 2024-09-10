@@ -58,6 +58,7 @@ const Nav = () => {
             <a
               href="https://www.linkedin.com/in/guillaume-destr%C3%A9e/"
               target="blank"
+              className="navLink"
             >
               <li>
                 <img src={LogoLinkedIn} alt="Logo du réseau social LinkedIn" />

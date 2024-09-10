@@ -8,7 +8,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(
-      "Le formulaire n'est pas encore actif merci de me contacter via le bouton ci-dessous"
+      "Le formulaire n'est pas encore actif merci de me contacter via le bouton ci-dessus"
     );
   };
 

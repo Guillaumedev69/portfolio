@@ -18,6 +18,7 @@
         text-decoration: none;
         font-family: "cuprum";
       }
+      
     }
     &__info {
       color: $color4;
@@ -25,6 +26,9 @@
       flex-direction: column;
       align-items: center;
       font-family: "cuprum";
+      .noneMobile {
+        display: none;
+      }
       .btnSign {
         display: none;
       }
@@ -51,6 +55,7 @@
         text-decoration: none;
         font-family: "cuprum";
       }
+      
     }
     &__info {
       color: $color4;
@@ -58,6 +63,9 @@
       flex-direction: column;
       align-items: center;
       font-family: "cuprum";
+      .noneMobile {
+        display: none;
+      }
       .btnSign {
         display: none;
       }
@@ -74,6 +82,14 @@
       color: $color4;
       text-decoration: none;
       font-family: "cuprum";
+      .noneMobile {
+        display: none;
+        font-size: 1.1rem;
+        text-align: start;
+        color: $color4;
+        text-decoration: none;
+        font-family: "cuprum";
+      }
     }
     &____info {
       text-align: center;
@@ -84,6 +100,49 @@
 
 /* Large devices (desktops, ≥992px) */
 @media (min-width: 992px) {
+  .footer {
+    align-items: start;
+    &__link {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      .footerLink {
+        font-size: 1.4rem;
+        text-align: start;
+        color: $color4;
+        text-decoration: none;
+        font-family: "cuprum";
+      }
+      .contactContain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      .footerLink:hover {
+        color: $color2;
+      }
+    }
+    &__info {
+      text-align: start;
+      width: 100%;
+      font-size: 1.1rem;
+      .noneMobile {
+        display: inline;
+        font-size: 1.1rem;
+        text-align: start;
+        color: $color4;
+        text-decoration: none;
+        font-family: "cuprum";
+      }
+      a {
+        text-decoration: none;
+        color: $color4;
+      }
+    }
+  }
 }
 
 /* Extra large devices (large desktops, ≥1200px) */
@@ -91,19 +150,4 @@
 }
 
 @media (min-width: 1440px) {
-  .footer {
-    align-items: start;
-    .footerLink {
-      font-size: 1.4rem;
-      text-align: start;
-      color: $color4;
-      text-decoration: none;
-      font-family: "cuprum";
-    }
-    &__info {
-      text-align: start;
-      width: 100%;
-      font-size: 1.1rem;
-    }
-  }
 }

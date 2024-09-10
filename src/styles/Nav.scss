@@ -42,7 +42,7 @@
     }
     button {
       background: none;
-      color: $color2 ;
+      color: $color2;
       border: none;
       cursor: pointer;
     }
@@ -126,10 +126,9 @@
       a {
         text-decoration: none;
       }
-      
-      .navLink :hover{
+
+      .navLink :hover {
         color: $color2;
-        fill: $color2;
         position: relative;
         top: 1px;
       }
@@ -149,6 +148,10 @@
       }
       .btnAccess {
         display: none;
+      }
+      .navLink:hover {
+        filter: invert(41%) sepia(17%) saturate(687%) hue-rotate(18deg)
+          brightness(91%) contrast(82%);
       }
     }
     button {

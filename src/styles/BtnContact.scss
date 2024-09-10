@@ -37,11 +37,6 @@
         color: $color3;
         font-size: 1.2rem;
       }
-      &__icon:hover {
-        position: relative;
-        top: 1px;
-        color:$color1;
-      }
     }
   }
 }
@@ -84,11 +79,8 @@
         color: $color3;
         font-size: 1.2rem;
       }
-      &__icon:hover {
-        position: relative;
-        top: 1px;
-        color:$color1;
-      }
+      
+      
     }
   }
 }
@@ -99,6 +91,16 @@
 
 /* Large devices (desktops, ≥992px) */
 @media (min-width: 992px) {
+  .containerBulle{
+    .btnContact{
+      &__icon:hover {
+        position: relative;
+        top: 1px;
+        color: $color1;
+      }
+    }
+  }
+  
 }
 
 /* Extra large devices (large desktops, ≥1200px) */
