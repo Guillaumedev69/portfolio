@@ -79,10 +79,6 @@ const Main = () => {
       </section>
       <section className="sectionContact" id="contact">
         <h2 className="contactTitle">CONTACT</h2>
-        <p>
-          Le formulaire n&apos;est pas encore actif merci de cliquer directement
-          sur le bouton &ldquo;Contactez-moi !&rdquo;
-        </p>
         <ContactForm />
         <a href="#main">
           <FontAwesomeIcon className="iconA" icon={faAnglesUp} title="up" />
