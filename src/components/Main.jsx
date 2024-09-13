@@ -66,7 +66,7 @@ const Main = () => {
         <EndSectionFour />
       </section>
       <section className="sectionTarif" id="tarif">
-        <h2 className="tarifTitle">TARIFS</h2>
+        <h2 className="tarifTitle"></h2>
         <Tarifs/>
       </section>
       <section className="sectionContact" id="contact">
