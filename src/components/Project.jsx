@@ -16,7 +16,7 @@ import IconMongo from "../assets/icons/mongo-icon.svg";
 import IconFigma from "../assets/icons/figma-icon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import Filter from "./Filter"; // Import du composant Filter
+import Filter from "./Filter";
 
 const Project = () => {
   const [flippedCards, setFlippedCards] = useState([]);
@@ -38,10 +38,13 @@ const Project = () => {
       img: ImgKasa,
       title: "Kasa - Location immobilière",
       category: "Frontend",
-      description: `Mon projet sur l'application web Kasa était l'intégration d'une maquette Figma en React & SASS.
-                    J'ai dû créer et implémenter plusieurs pages et les lier grâce à React-Router-Dom, créer des composant réutilisables.
-                    Le plus difficile à gérer, c'était l'affichage de la page
-                    404 pour une erreur d'ID de cards et de créer différent styles pour le même composant comme les collaspes.`,
+      description: `Projet: Intégration d'une maquette Figma avec React & SASS.
+      
+      Les missions:
+      - Création et implémentation de plusieurs pages
+      - Mise en place de React-Router-Dom
+      - Création de composants réutilisables
+      - Gestion de la page 404 "Not Found"`,
       icons: [IconReact, IconSass],
       linkGithub: "https://github.com/Guillaumedev69/Kasa-Fr",
       linkProjet: "https://kasa-fr.vercel.app/",
@@ -50,9 +53,11 @@ const Project = () => {
       img: ImgSophieBluel,
       title: "Sophie Bluel - Portfolio en ligne",
       category: "Frontend",
-      description: `Le sujet principal de ce projet était l'intégration d'une maquette Figma avec JavaScript & CSS.
-Dans la maquette, j'avais des modales à créer avec une liaison vers l'API CRUD pour que le client puisse Ajouter, Afficher, Modifier ou Supprimer des projets de sa galerie.
-Cela m'a donné quelques difficultés pour mes premiers appels API avec Fetch et pour la création de modale.`,
+      description: `Projet: Intégration d'une maquette Figma avec JavaScript & CSS.
+                    
+      Les missions:
+      - Création des modales d'affichage et de gestion de galerie
+      - Gestion de la galerie avec des requêtes vers l'API`,
       icons: [IconJavascript, IconCss],
       linkGithub: "https://github.com/Guillaumedev69/Portfolio_Sophie_Bluel",
     },
@@ -60,9 +65,11 @@ Cela m'a donné quelques difficultés pour mes premiers appels API avec Fetch et
       img: ImgBooki,
       title: "Booki - Agence de voyage",
       category: "Frontend",
-      description: `Booki étant mon premier projet, je devais intégrer une maquette figma en utilisant uniquement HTML et CSS.
-                    Mes difficultés sur ce projet ont été le responsive design et les petits 
-                    détails de la maquette qui étaient différents suivants les tailles d'écrans.`,
+      description: `Projet: Intégrer une maquette Figma en HTML & CSS.
+
+      Les missions:
+      - Gestion du responsive design
+      - Ajustement des éléments en fonction des tailles d'écran`,
       icons: [IconHtml, IconCss],
       linkGithub: "https://github.com/Guillaumedev69/Booki_integration",
       linkProjet: "https://guillaumedev69.github.io/Booki_integration/",
@@ -71,9 +78,16 @@ Cela m'a donné quelques difficultés pour mes premiers appels API avec Fetch et
       img: ImgMonVieuxGrimoire,
       title: "Mon Vieux Grimoire - librairie",
       category: "Backend",
-      description: `Mon Vieux Grimoire et une application web en React qui permet aux utilisateurs de s'inscrire et/ou de se connecter pour ajouter des livres en ligne et de les noter.
-                    Ma mission était de créer la partie serveur avec une base de données (CRUD) pour que les clients puissent Ajouter, Afficher, Modifier ou Supprimer les livres ajoutés.
-                    Pour moi, les points les plus compliqués ont été de gérer l'ajout et le traitement des images avec multer et Sharp.`,
+      description: `Projet: Création de la partie serveur et de la base de données d'une application web de notations de livres en Node.js.
+
+      Les missions:
+      - Mise en service de la partie serveur
+      - Création d'une base de données sur MongoDB
+      - liaison en la DB et l'application web
+      - Gestion des éléments de la base de données (CRUD)
+      - Création du système de notation des livres
+      - Mise en place d'un système d'authentification client
+      - Création d'un traitement d'image à l'importation `,
       icons: [IconNode, IconMongo],
       linkGithub: "https://github.com/Guillaumedev69/Mon-Vieux-Grimoire",
       linkProjet: "",
@@ -82,14 +96,23 @@ Cela m'a donné quelques difficultés pour mes premiers appels API avec Fetch et
       img: ImgTeumaMaquette,
       title: "TEUMA SME - Cadre Externalisé",
       category: "Création",
-      description: `Création de site de cours ...`,
+      description: `Projet: Création pour un Cadre Externalisé en React& Sass.
+      
+      Les missions:
+      - Création d'une maquette sur Figma
+      - Intégration de la maquette`,
       icons: [IconReact, IconSass, IconFigma],
     },
     {
       img: ImgNinaCarducci,
       title: "Nina CARDUCCI - Photographe Professionnel",
       category: "Optimisation",
-      description: `Nina CARDUCCI est une photographe qui avait besoin d'amélioration sur son portfolio. Après analyse, des optimisations sur les performances, l'accessibilité et le SEO ont été réalisés ainsi que la correction de plusieurs bugs des fonctionnalités.`,
+      description: `Projet: Amélioration d'un portfolio d'une photographe.
+
+      Les missions:
+      - Analyse et détection de bus
+      - Optimisation des performances, de l'accessibilité et du SEO
+      - Correction de bugs impactant certaines fonctionnalités`,
       icons: [IconJavascript],
       linkGithub: "https://github.com/Guillaumedev69/Nina_Carducci",
       linkProjet: "https://guillaumedev69.github.io/Nina_Carducci/",
@@ -103,7 +126,6 @@ Cela m'a donné quelques difficultés pour mes premiers appels API avec Fetch et
 
   return (
     <>
-      {/* Utilisation du composant Filter */}
       <Filter selectedCategory={filter} setFilter={setFilter} />
 
       <div className="containerCards">

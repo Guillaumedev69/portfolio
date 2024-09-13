@@ -68,6 +68,8 @@
             padding: 0.5rem 1rem;
             font-family: "cuprum";
             color: $color3;
+            white-space: pre-wrap;
+            text-align: start;
           }
           .linkContain {
             padding: 0.5rem 0;
@@ -164,6 +166,8 @@
             font-family: "cuprum";
             color: $color3;
             font-size: 1.5rem;
+            white-space: pre-wrap;
+            text-align: start;
           }
           .linkContain {
             padding: 0.5rem 0;
@@ -213,7 +217,7 @@
         perspective: 1000px;
         cursor: pointer;
         position: relative;
-        
+
         &.flipped .cards__frontContent {
           transform: rotateY(180deg);
         }

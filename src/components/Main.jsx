@@ -20,14 +20,6 @@ const Main = () => {
       <Header />
       <section className="sectionIntro">
         <TextIntro />
-        <p className="pIntro">
-          <br />
-          Vous êtes à la recherche d&apos;un développeur web passionné pour
-          réaliser vos projets ou compléter votre équipe ?
-          <br />
-          <br />
-          Découvrez mon profil
-        </p>
       </section>
       <section className="sectionInfo" id="about">
         <EndSectionOne />
@@ -37,24 +29,16 @@ const Main = () => {
               <h2 className="titleFirstInfo aboutTitle">GUILLAUME DESTRÉE</h2>
             </div>
             <p className="pInfo">
-              Je suis développeur spécialisé dans les sites Web et Mobile
-              passionné par mon métier, je maîtrise principalement{" "}
-              <span>REACT</span> et Node.js.
-              <br />
-              Je maitrise aussi plusieurs outils tels que Figma pour la lecture
-              ou la création de maquette, Lighthouse et Wave pour
-              l&apos;optimisation de votre site web ainsi que, Trello, Notion,
-              Slack etc. Vous trouverez quelques uns de mes projets dans la
-              section dédiée.
-              <br />
-              <br /> Je suis à la recherche d&apos;opportunités professionnelles
-              en tant que développeur front end/fullstack. Je suis à
-              l&apos;écoute de toute proposition d&apos;emploi salarié et/ou de
-              mission en freelance.
-              <br />
-              <br /> Je mettrai à votre service toutes mes connaissances, mes
-              compétences et ma motivation et saurai m&apos;investir, apprendre
-              et me perfectionner au quotidien.
+              Vous souhaitez donner vie à un projet ou mettre à jour votre site
+              web ?
+              <br /><br />
+              Je vous propose un accompagnement sur mesure pour créer le site
+              qui vous ressemble.
+              <br /><br />
+              J&apos;analyse et optimise votre site web pour augmenter ses
+              performances, accroître votre visibilité et améliorer
+              l&apos;experience utilisateur.
+              <br /><br />
             </p>
             <BtnContact />
             <BtnCv />
@@ -75,7 +59,7 @@ const Main = () => {
         <EndSectionThree />
         <h2 className="skillsTitle">SKILLS</h2>
         <Skills />
-        <EndSectionFour/>
+        <EndSectionFour />
       </section>
       <section className="sectionContact" id="contact">
         <h2 className="contactTitle">CONTACT</h2>

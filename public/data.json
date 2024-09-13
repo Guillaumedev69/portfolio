@@ -1,0 +1,57 @@
+[
+    {
+      "img": "ImgKasa",
+      "title": "Kasa - Location immobilière",
+      "category": "Frontend",
+      "description": "Projet: Intégration d'une maquette Figma avec React & SASS\nLes missions:\n- Création et implémentation de plusieurs pages\n- Utilisation de React-Router-Dom une navigation instantanée\n- Création de composants réutilisables\n- Gestion de la page 404 'Not Found' en fonction de l'identifiant dans la base de données",
+      "icons": ["IconReact", "IconSass"],
+      "linkGithub": "https://github.com/Guillaumedev69/Kasa-Fr",
+      "linkProjet": "https://kasa-fr.vercel.app/"
+    },
+    {
+      "img": "ImgSophieBluel",
+      "title": "Sophie Bluel - Portfolio en ligne",
+      "category": "Frontend",
+      "description": "Projet: Intégration d'une maquette Figma avec JavaScript & CSS.\nLes missions:\n- Création des modales d'affichage et de gestion de galerie\n- Gestion de la galerie avec une API CRUD (Ajouter, Afficher, Modifier ou Supprimer)",
+      "icons": ["IconJavascript", "IconCss"],
+      "linkGithub": "https://github.com/Guillaumedev69/Portfolio_Sophie_Bluel",
+      "linkProjet": ""
+    },
+    {
+      "img": "ImgBooki",
+      "title": "Booki - Agence de voyage",
+      "category": "Frontend",
+      "description": "Projet: Intégrer une maquette Figma en HTML & CSS\nLes missions:\n- Gestion du responsive design\n- Ajustement des différents éléments de la maquette en fonction des tailles d'écran",
+      "icons": ["IconHtml", "IconCss"],
+      "linkGithub": "https://github.com/Guillaumedev69/Booki_integration",
+      "linkProjet": "https://guillaumedev69.github.io/Booki_integration/"
+    },
+    {
+      "img": "ImgMonVieuxGrimoire",
+      "title": "Mon Vieux Grimoire - librairie",
+      "category": "Backend",
+      "description": "Projet: Création de la partie serveur et de la base de données d'une application web de notations de livres en Node.js\nLes missions:\n- Mise en service de la partie serveur\n- Création de la base de données et liaison avec l'application web\n- Gestion des éléments de la base de données (CRUD)\n- Création du système de notation des livres\n- Mise en place d'un système d'authentification client\n- Création d'un traitement d'image à l'importation",
+      "icons": ["IconNode", "IconMongo"],
+      "linkGithub": "https://github.com/Guillaumedev69/Mon-Vieux-Grimoire",
+      "linkProjet": ""
+    },
+    {
+      "img": "ImgTeumaMaquette",
+      "title": "TEUMA SME - Cadre Externalisé",
+      "category": "Création",
+      "description": "Projet: Création d'un site professionelle pour un Cadre Externalisé en React& Sass\nLes missions:\n- Création d'une maquette sur Figma\n- Intégration de la maquette",
+      "icons": ["IconReact", "IconSass", "IconFigma"],
+      "linkGithub": "",
+      "linkProjet": ""
+    },
+    {
+      "img": "ImgNinaCarducci",
+      "title": "Nina CARDUCCI - Photographe Professionnel",
+      "category": "Optimisation",
+      "description": "Projet: Amélioration d'un portfolio d'une photographe\nLes missions:\n- Analyse et optimisation des performances, de l'accessibilité et du SEO\n- Correction de bugs impactant certaines fonctionnalités",
+      "icons": ["IconJavascript"],
+      "linkGithub": "https://github.com/Guillaumedev69/Nina_Carducci",
+      "linkProjet": "https://guillaumedev69.github.io/Nina_Carducci/"
+    }
+  ]
+  

@@ -4,7 +4,7 @@ import "../styles/TextIntro.scss";
 const TextIntro = () => {
   useEffect(() => {
     consoleText(
-      ["Création", "Personnalisation","Analyse", "Optimisation", "Maintenance"],
+      ["Création de site web", "Personnalisation", "Analyse et Optimisation de site web"],
       "text",
     );
   }, []);
