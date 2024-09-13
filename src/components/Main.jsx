@@ -13,6 +13,7 @@ import EndSectionOne from "./EndSectionOne";
 import EndSectionTwo from "./EndSectionTwo";
 import EndSectionThree from "./EndSectionThree";
 import EndSectionFour from "./EndSectionFour";
+import Tarifs from "./Tarifs";
 
 const Main = () => {
   return (
@@ -31,14 +32,17 @@ const Main = () => {
             <p className="pInfo">
               Vous souhaitez donner vie à un projet ou mettre à jour votre site
               web ?
-              <br /><br />
+              <br />
+              <br />
               Je vous propose un accompagnement sur mesure pour créer le site
               qui vous ressemble.
-              <br /><br />
+              <br />
+              <br />
               J&apos;analyse et optimise votre site web pour augmenter ses
               performances, accroître votre visibilité et améliorer
               l&apos;experience utilisateur.
-              <br /><br />
+              <br />
+              <br />
             </p>
             <BtnContact />
             <BtnCv />
@@ -60,6 +64,10 @@ const Main = () => {
         <h2 className="skillsTitle">SKILLS</h2>
         <Skills />
         <EndSectionFour />
+      </section>
+      <section className="sectionTarif" id="tarif">
+        <h2 className="tarifTitle">TARIFS</h2>
+        <Tarifs/>
       </section>
       <section className="sectionContact" id="contact">
         <h2 className="contactTitle">CONTACT</h2>

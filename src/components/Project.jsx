@@ -83,7 +83,7 @@ const Project = () => {
       Les missions:
       - Mise en service de la partie serveur
       - Création d'une base de données sur MongoDB
-      - liaison en la DB et l'application web
+      - liaison entre la DB et l'application web
       - Gestion des éléments de la base de données (CRUD)
       - Création du système de notation des livres
       - Mise en place d'un système d'authentification client
@@ -96,7 +96,7 @@ const Project = () => {
       img: ImgTeumaMaquette,
       title: "TEUMA SME - Cadre Externalisé",
       category: "Création",
-      description: `Projet: Création pour un Cadre Externalisé en React& Sass.
+      description: `Projet: Création pour la société TEUMA SME en React& Sass.
       
       Les missions:
       - Création d'une maquette sur Figma
@@ -110,7 +110,7 @@ const Project = () => {
       description: `Projet: Amélioration d'un portfolio d'une photographe.
 
       Les missions:
-      - Analyse et détection de bus
+      - Analyse et détection de bugs
       - Optimisation des performances, de l'accessibilité et du SEO
       - Correction de bugs impactant certaines fonctionnalités`,
       icons: [IconJavascript],

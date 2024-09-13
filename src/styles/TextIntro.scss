@@ -17,6 +17,11 @@
   display: inline-block;
   position: relative;
 }
+@media (max-width: 575.98px) {
+.console-container{
+  font-size: 1.8rem;
+}
+}
 @media (min-width: 992px) {
   .console-container {
     font-size: 4rem;
