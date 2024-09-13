@@ -78,8 +78,8 @@ const Project = () => {
       img: ImgMonVieuxGrimoire,
       title: "Mon Vieux Grimoire - librairie",
       category: "Backend",
-      description: `Projet: Création de la partie serveur et de la base de données d'une application web de notations de livres en Node.js.
-
+      description: `Projet: Création du backend d'une application web de notations de livres en Node.js.
+      
       Les missions:
       - Mise en service de la partie serveur
       - Création d'une base de données sur MongoDB
