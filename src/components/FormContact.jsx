@@ -60,7 +60,7 @@ const ContactForm = () => {
                 type="text"
                 id="lastname"
                 placeholder="ex: Bond James"
-                name="from_name"
+                name="user_name"
                 required
               />
             </div>
