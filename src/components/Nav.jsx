@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import "../styles/Nav.scss"
+import "../styles/Nav.scss";
 
 const Nav = () => {
   const [isBulleVisible, setIsNavVisible] = useState(false);
@@ -32,16 +32,19 @@ const Nav = () => {
       {isBulleVisible && (
         <>
           <ul className="nav__container-link-page">
-            <a href="/#about" className="navLink">
+            <a href="/#about" className="navLink" onClick={handleButtonClick}>
               <li>À propos</li>
             </a>
-            <a href="/#project" className="navLink">
+            <a href="/#project" className="navLink" onClick={handleButtonClick}>
               <li>Projets</li>
             </a>
-            <a href="/#skills" className="navLink">
+            <a href="/#skills" className="navLink" onClick={handleButtonClick}>
               <li>Skills</li>
             </a>
-            <a href="/#contact" className="navLink">
+            <a href="/#tarif" className="navLink" onClick={handleButtonClick}>
+              <li>Tarifs</li>
+            </a>
+            <a href="/#contact" className="navLink" onClick={handleButtonClick}>
               <li>Contact</li>
             </a>
           </ul>

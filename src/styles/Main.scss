@@ -81,6 +81,15 @@
         color: $color1;
       }
     }
+    .sectionTarif{
+      padding: 5rem 0.5rem 0 0.5rem;
+      .tarifTitle {
+        color: $color2;
+        margin: 3rem 0;
+
+      }
+    }
+    
     .sectionContact {
       display: flex;
       flex-direction: column;
@@ -88,7 +97,7 @@
       background-color: $color3;
       padding: 3rem 0.5rem;
       .contactTitle {
-        color: $color2;
+        color: $color1;
         margin-top: 3rem;
       }
       p {
@@ -205,6 +214,14 @@
         padding-bottom: 2rem;
       }
     }
+    .sectionTarif{
+      padding: 5rem 0.5rem 0 0.5rem;
+      .tarifTitle {
+        color: $color2;
+        margin: 3rem 0;
+        font-size: 2rem;
+      }
+    }
     .sectionContact {
       display: flex;
       flex-direction: column;
@@ -212,7 +229,7 @@
       background-color: $color3;
       padding: 8rem 2rem 6rem 2rem;
       .contactTitle {
-        color: $color2;
+        color: $color1;
         margin-bottom: 2rem;
       }
       p {
@@ -329,7 +346,7 @@
         font-size: 1.5rem;
       }
       .contactTitle {
-        color: $color2;
+        color: $color1;
         margin-bottom: 2rem;
         font-size: 2rem;
       }
@@ -439,6 +456,7 @@
     .sectionContact {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 2rem;
       background-color: $color3;
       padding: 8rem 16rem 6rem 16rem;
@@ -446,7 +464,7 @@
         font-size: 1.5rem;
       }
       .contactTitle {
-        color: $color2;
+        color: $color1;
         margin-bottom: 2rem;
         font-size: 2rem;
       }
@@ -578,6 +596,14 @@
         font-size: 2.5rem;
       }
     }
+    .sectionTarif{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .tarifTitle{
+        font-size: 2.5rem;
+      }
+    }
     .sectionContact {
       display: flex;
       flex-direction: column;
@@ -585,7 +611,7 @@
       background-color: $color3;
       padding: 8rem 25rem 6rem 25rem;
       .contactTitle {
-        color: $color2;
+        color: $color1;
         margin-bottom: 2rem;
         font-size: 2.5rem;
       }

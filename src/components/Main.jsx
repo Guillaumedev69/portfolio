@@ -40,7 +40,7 @@ const Main = () => {
               <br />
               J&apos;analyse et optimise votre site web pour augmenter ses
               performances, accroître votre visibilité et améliorer
-              l&apos;experience utilisateur.
+              l&apos;expérience utilisateur.
               <br />
               <br />
             </p>
@@ -66,7 +66,7 @@ const Main = () => {
         <EndSectionFour />
       </section>
       <section className="sectionTarif" id="tarif">
-        <h2 className="tarifTitle"></h2>
+        <h2 className="tarifTitle">TARIFS</h2>
         <Tarifs/>
       </section>
       <section className="sectionContact" id="contact">

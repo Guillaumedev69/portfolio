@@ -55,19 +55,19 @@ const ContactForm = () => {
         <div className="infoContainer">
           <div className="nameContainer">
             <div className="nameContainer__lastname">
-              <label htmlFor="lastname">Nom et Prénom:</label>
+              <label htmlFor="lastname">Nom et Prénom:<br/></label>
               <input
                 type="text"
                 id="lastname"
                 placeholder="ex: Bond James"
-                name="user_name"
+                name="to_name"
                 required
               />
             </div>
             
           </div>
           <div className="infoContainer__email">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">Email:<br/></label>
             <input
               type="email"
               id="email"
@@ -77,7 +77,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="infoContainer__msg">
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message">Message:<br/></label>
             <textarea
               id="message"
               placeholder="Votre message ici..."
