@@ -31,7 +31,7 @@ const ContactForm = () => {
     emailjs
       .sendForm(
         "service_e12a3vx", // Remplace par ton Service ID
-        "template_vyop4an", // Remplace par ton Template ID
+        "template_dpvnnss", // Remplace par ton Template ID
         form.current,
         { publicKey: "tr7BUK0QznFQoCsss" }
       )
