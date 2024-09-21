@@ -16,7 +16,9 @@ const Footer = () => {
         <a href="/#skills" className="footerLink">
           <li>Skills</li>
         </a>
-        <a href="/#tarif" className="footerLink">Tarifs</a>
+        <a href="/#tarif" className="footerLink">
+          <li>Tarifs</li>
+        </a>
         <a href="/#contact" className="footerLink">
           <li>Contact</li>
         </a>
@@ -26,13 +28,10 @@ const Footer = () => {
       </ul>
 
       <div className="footer__info">
-      <p className="noneMobile">07 88 23 53 92</p>
-            <a
-              href="mailto:devstree.guillaume@gmail.com"
-              className="noneMobile"
-            >
-              <p>devstree.guillaume@gmail.com</p>
-            </a>
+        <p className="noneMobile">07 88 23 53 92</p>
+        <a href="mailto:devstree.guillaume@gmail.com" className="noneMobile">
+          <p>devstree.guillaume@gmail.com</p>
+        </a>
         <p>&copy; 2024, DEV_STRÉE</p>
         <Link to="/auth">
           <FontAwesomeIcon
