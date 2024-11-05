@@ -6,7 +6,9 @@ import ImgBooki from "../assets/imgBooki.webp";
 import ImgMonVieuxGrimoire from "../assets/imgMonVieuxGrimoire.webp";
 import ImgTeumaMaquette from "../assets/imgTeumaMaquette.webp";
 import ImgNinaCarducci from "../assets/imgResultatNinaCarducci.webp";
+import ImgWaiting from "../assets/imgEncours.webp";
 import IconReact from "../assets/icons/react-icon.svg";
+import IconNext from "../assets/icons/nextjs-icon.svg";
 import IconSass from "../assets/icons/sass-icon.svg";
 import IconJavascript from "../assets/icons/javascript-icon.svg";
 import IconCss from "../assets/icons/css-icon.svg";
@@ -96,12 +98,14 @@ const Project = () => {
       img: ImgTeumaMaquette,
       title: "TEUMA SME - Cadre Externalisé",
       category: "Création",
-      description: `Projet: Création pour la société TEUMA SME en React& Sass.
+      description: `Projet: Création pour la société TEUMA SME en Next.JS & Sass.
       
       Les missions:
       - Création d'une maquette sur Figma
-      - Intégration de la maquette`,
-      icons: [IconReact, IconSass, IconFigma],
+      - Intégration de la maquette
+      - Mise en ligne site web
+      - Paramétrage du nom de domaine `,
+      icons: [IconNext, IconSass, IconFigma],
     },
     {
       img: ImgNinaCarducci,
@@ -116,6 +120,20 @@ const Project = () => {
       icons: [IconJavascript],
       linkGithub: "https://github.com/Guillaumedev69/Nina_Carducci",
       linkProjet: "https://guillaumedev69.github.io/Nina_Carducci/",
+    },
+    {
+      img: ImgWaiting,
+      title: "Intuitiv RH",
+      category: "Création",
+      description: `Projet: Création d'une identité numérique complète.(en cours...)
+      
+      Les missions:
+      - Création Logo / palette de couleur
+      - Création d'une maquette sur Figma
+      - Intégration de la maquette
+      - Mise en ligne site web
+      - Paramétrage du nom de domaine `,
+      icons: [IconNext, IconSass, IconFigma],
     },
   ];
 

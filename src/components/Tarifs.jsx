@@ -5,7 +5,7 @@ const Tarifs = () => {
   const tarifs = [
     {
       title: "Création de site vitrine",
-      pricej: "400",
+      pricej: "2000",
       description: [
         "Création d'un site responsive",
         "Réferencement naturel (SEO)",
@@ -17,7 +17,7 @@ const Tarifs = () => {
     },
     {
       title: "Intégration de site vitrine",
-      pricej: "300",
+      pricej: "1500",
       description: [
         "Intégration d'une maquette fournie",
         "Réferencement naturel (SEO)",
@@ -29,12 +29,13 @@ const Tarifs = () => {
     },
     {
       title: "Optimisation & Maintenance",
-      pricea: "200",
+      pricea: "150",
       description: [
         "Analyse complète trimestrielle",
         "Correction de bugs",
         "Mise à jour des composants",
         "Petites modifications",
+        "Mise en place d'un contrat de maintenance",
       ],
     },
     {
@@ -56,12 +57,12 @@ const Tarifs = () => {
 
           {tarif.pricej && (
             <h4 className="tarifContainer__price">
-              À partir de {tarif.pricej} €/jour
+              À partir de {tarif.pricej} €
             </h4>
           )}
           {tarif.pricea && (
             <h4 className="tarifContainer__price">
-              À partir de {tarif.pricea} €/mois
+              À partir de {tarif.pricea} €
             </h4>
           )}
           {tarif.price && (
