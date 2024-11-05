@@ -37,6 +37,34 @@ const Project = () => {
 
   const projects = [
     {
+      img: ImgWaiting,
+      title: "Intuitiv RH",
+      category: "Création",
+      description: `Projet: Création d'une identité numérique complète.(en cours...)
+      
+      Les missions:
+      - Création Logo / palette de couleur
+      - Création d'une maquette sur Figma
+      - Intégration de la maquette
+      - Mise en ligne site web
+      - Paramétrage du nom de domaine `,
+      icons: [IconNext, IconSass, IconFigma],
+    },
+    {
+      img: ImgTeumaMaquette,
+      title: "TEUMA SME - Cadre Externalisé",
+      category: "Création",
+      description: `Projet: Création pour la société TEUMA SME en Next.JS & Sass.
+      
+      Les missions:
+      - Création d'une maquette sur Figma
+      - Intégration de la maquette
+      - Mise en ligne site web
+      - Paramétrage du nom de domaine `,
+      icons: [IconNext, IconSass, IconFigma],
+      linkProjet: "https://teumasme.fr/",
+    },
+    {
       img: ImgKasa,
       title: "Kasa - Location immobilière",
       category: "Frontend",
@@ -95,19 +123,6 @@ const Project = () => {
       linkProjet: "",
     },
     {
-      img: ImgTeumaMaquette,
-      title: "TEUMA SME - Cadre Externalisé",
-      category: "Création",
-      description: `Projet: Création pour la société TEUMA SME en Next.JS & Sass.
-      
-      Les missions:
-      - Création d'une maquette sur Figma
-      - Intégration de la maquette
-      - Mise en ligne site web
-      - Paramétrage du nom de domaine `,
-      icons: [IconNext, IconSass, IconFigma],
-    },
-    {
       img: ImgNinaCarducci,
       title: "Nina CARDUCCI - Photographe Professionnel",
       category: "Optimisation",
@@ -120,20 +135,6 @@ const Project = () => {
       icons: [IconJavascript],
       linkGithub: "https://github.com/Guillaumedev69/Nina_Carducci",
       linkProjet: "https://guillaumedev69.github.io/Nina_Carducci/",
-    },
-    {
-      img: ImgWaiting,
-      title: "Intuitiv RH",
-      category: "Création",
-      description: `Projet: Création d'une identité numérique complète.(en cours...)
-      
-      Les missions:
-      - Création Logo / palette de couleur
-      - Création d'une maquette sur Figma
-      - Intégration de la maquette
-      - Mise en ligne site web
-      - Paramétrage du nom de domaine `,
-      icons: [IconNext, IconSass, IconFigma],
     },
   ];
 
