@@ -59,7 +59,7 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="lastname"
-                placeholder="ex: Bond James"
+                placeholder="ex: Durand Marc"
                 name="user_name"
                 required
               />
@@ -71,7 +71,7 @@ const ContactForm = () => {
             <input
               type="email"
               id="email"
-              placeholder="ex: luke.skywalker@r2d2.com"
+              placeholder="ex: exemple@mail.com"
               name="user_email"
               required
             />
