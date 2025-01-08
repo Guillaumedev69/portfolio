@@ -1,28 +1,15 @@
 import "../styles/Project.scss";
-import { useState } from "react";
-import ImgKasa from "../assets/imgKasa.webp";
-import ImgSophieBluel from "../assets/imgSophieBluel.webp";
-import ImgBooki from "../assets/imgBooki.webp";
-import ImgMonVieuxGrimoire from "../assets/imgMonVieuxGrimoire.webp";
-import ImgTeumaMaquette from "../assets/imgTeumaMaquette.webp";
-import ImgNinaCarducci from "../assets/imgResultatNinaCarducci.webp";
-import ImgWaiting from "../assets/imgEncours.webp";
-import IconReact from "../assets/icons/react-icon.svg";
-import IconNext from "../assets/icons/nextjs-icon.svg";
-import IconSass from "../assets/icons/sass-icon.svg";
-import IconJavascript from "../assets/icons/javascript-icon.svg";
-import IconCss from "../assets/icons/css-icon.svg";
-import IconHtml from "../assets/icons/html-icon.svg";
-import IconNode from "../assets/icons/node-icon.svg";
-import IconMongo from "../assets/icons/mongo-icon.svg";
-import IconFigma from "../assets/icons/figma-icon.svg";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Filter from "./Filter";
+const apiUrl = import.meta.env.VITE_API_URL;
+const apiKey = import.meta.env.VITE_API_KEY_PROJECT;
 
 const Project = () => {
   const [flippedCards, setFlippedCards] = useState([]);
   const [filter, setFilter] = useState("All");
+  const [projects, setProjects] = useState([]);
 
   const handleCardClick = (index) => {
     setFlippedCards((prevFlippedCards) => {
@@ -35,108 +22,30 @@ const Project = () => {
     });
   };
 
-  const projects = [
-    {
-      img: ImgWaiting,
-      title: "Intuitiv RH",
-      category: "Création",
-      description: `Projet: Création d'une identité numérique complète.(en cours...)
-      
-      Les missions:
-      - Création Logo / palette de couleur
-      - Création d'une maquette sur Figma
-      - Intégration de la maquette
-      - Mise en ligne site web
-      - Paramétrage du nom de domaine `,
-      icons: [IconNext, IconSass, IconFigma],
-    },
-    {
-      img: ImgTeumaMaquette,
-      title: "TEUMA SME - Cadre Externalisé",
-      category: "Création",
-      description: `Projet: Création pour la société TEUMA SME en Next.JS & Sass.
-      
-      Les missions:
-      - Création d'une maquette sur Figma
-      - Intégration de la maquette
-      - Mise en ligne site web
-      - Paramétrage du nom de domaine `,
-      icons: [IconNext, IconSass, IconFigma],
-      linkProjet: "https://teumasme.fr/",
-    },
-    {
-      img: ImgKasa,
-      title: "Kasa - Location immobilière",
-      category: "Frontend",
-      description: `Projet: Intégration d'une maquette Figma avec React & SASS.
-      
-      Les missions:
-      - Création et implémentation de plusieurs pages
-      - Mise en place de React-Router-Dom
-      - Création de composants réutilisables
-      - Gestion de la page 404 "Not Found"`,
-      icons: [IconReact, IconSass],
-      linkGithub: "https://github.com/Guillaumedev69/Kasa-Fr",
-      linkProjet: "https://kasa-fr.vercel.app/",
-    },
-    {
-      img: ImgSophieBluel,
-      title: "Sophie Bluel - Portfolio en ligne",
-      category: "Frontend",
-      description: `Projet: Intégration d'une maquette Figma avec JavaScript & CSS.
-                    
-      Les missions:
-      - Création des modales d'affichage et de gestion de galerie
-      - Gestion de la galerie avec des requêtes vers l'API`,
-      icons: [IconJavascript, IconCss],
-      linkGithub: "https://github.com/Guillaumedev69/Portfolio_Sophie_Bluel",
-    },
-    {
-      img: ImgBooki,
-      title: "Booki - Agence de voyage",
-      category: "Frontend",
-      description: `Projet: Intégrer une maquette Figma en HTML & CSS.
-
-      Les missions:
-      - Gestion du responsive design
-      - Ajustement des éléments en fonction des tailles d'écran`,
-      icons: [IconHtml, IconCss],
-      linkGithub: "https://github.com/Guillaumedev69/Booki_integration",
-      linkProjet: "https://guillaumedev69.github.io/Booki_integration/",
-    },
-    {
-      img: ImgMonVieuxGrimoire,
-      title: "Mon Vieux Grimoire - librairie",
-      category: "Backend",
-      description: `Projet: Création du backend d'une application web de notations de livres en Node.js.
-      
-      Les missions:
-      - Mise en service de la partie serveur
-      - Création d'une base de données sur MongoDB
-      - liaison entre la DB et l'application web
-      - Gestion des éléments de la base de données (CRUD)
-      - Création du système de notation des livres
-      - Mise en place d'un système d'authentification client
-      - Création d'un traitement d'image à l'importation `,
-      icons: [IconNode, IconMongo],
-      linkGithub: "https://github.com/Guillaumedev69/Mon-Vieux-Grimoire",
-      linkProjet: "",
-    },
-    {
-      img: ImgNinaCarducci,
-      title: "Nina CARDUCCI - Photographe Professionnel",
-      category: "Optimisation",
-      description: `Projet: Amélioration d'un portfolio d'une photographe.
-
-      Les missions:
-      - Analyse et détection de bugs
-      - Optimisation des performances, de l'accessibilité et du SEO
-      - Correction de bugs impactant certaines fonctionnalités`,
-      icons: [IconJavascript],
-      linkGithub: "https://github.com/Guillaumedev69/Nina_Carducci",
-      linkProjet: "https://guillaumedev69.github.io/Nina_Carducci/",
-    },
-  ];
+  useEffect(() => {
+    fetch(`${apiUrl}/api/projectcards?populate=*`, {
+      method: "GET",
+      headers: {
+        Authorization:
+          `Bearer${apiKey}`,
+        "Content-type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Réponse API project :", data);
+        if (data && data.data) {
+          const formattedProjects = data.data.map((item) => ({
+            id: item.id,
+            ...item,
+          }));
+          setProjects(formattedProjects);
+        } else {
+          console.error("Format inattendu :", data);
+        }
+      })
+      .catch((err) => console.error("Erreur API :", err));
+  }, []);
 
   const filteredProjects =
     filter === "All"
@@ -162,7 +71,7 @@ const Project = () => {
                   <p className="frontContent__category">{project.category}</p>
                   <img
                     className="frontContent__Img"
-                    src={project.img}
+                    src={`${apiUrl}${project.img.url}`}
                     alt={`capture d'écran du projet ${project.title}`}
                   />
                   <h3 className="frontContent__Title">{project.title}</h3>
@@ -173,14 +82,16 @@ const Project = () => {
                   <p className="backContent__P">{project.description}</p>
                   <div className="cardsIconsContainerLink">
                     <div className="iconContainer">
-                      {project.icons.map((icon, iconIndex) => (
-                        <img
-                          className="cardsIcons"
-                          src={icon}
-                          alt="project icon"
-                          key={iconIndex}
-                        />
-                      ))}
+                      {project.icons &&
+                        project.icons.length > 0 &&
+                        project.icons.map((icon, iconIndex) => (
+                          <img
+                            className="cardsIcons"
+                            src={`${apiUrl}${icon.url}`}
+                            alt={"Icon de la technologie utilisées"}
+                            key={iconIndex}
+                          />
+                        ))}
                     </div>
                     <div className="linkContain">
                       {project.linkProjet && (
