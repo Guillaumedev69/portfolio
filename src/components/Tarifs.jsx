@@ -58,7 +58,7 @@ const Tarifs = () => {
             <h3 className="tarifContainer__title">{tarif.title}</h3>
             <p className="tarifContainer__description">{tarif.description}</p>
             {tarif.tarif && (
-              <h4 className="tarifContainer__price">Tarif : à partir de {tarif.tarif}</h4>
+              <h4 className="tarifContainer__price">À partir de {tarif.tarif}</h4>
             )}
 
             {expandedCards[tarif.id] && hasAdditionalContent && (
@@ -77,12 +77,12 @@ const Tarifs = () => {
                 )}
                 {tarif.options && (
                   <div className="tarifContainer__description">
-                    <h4>Option de maintenance; :</h4>
+                    <h4>Contrat de maintenance (en option) :</h4>
                     <p>{tarif.options}</p>
                   </div>
                 )}
                 {tarif.tarifOptions && (
-                  <h4 className="tarifContainer__price">Tarif : {tarif.tarifOptions}</h4>
+                  <h4 className="tarifContainer__price">À partir de {tarif.tarifOptions}</h4>
                 )}
               </>
             )}
