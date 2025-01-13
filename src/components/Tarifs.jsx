@@ -71,13 +71,13 @@ const Tarifs = () => {
                 )}
                 {tarif.detailsMore && (
                   <div className="tarifContainer__description">
-                    <h4>Fonctionnalités essentielles :</h4>
+                    <h4>Pourquoi choisir cette offre ?</h4>
                     <p>{tarif.detailsMore}</p>
                   </div>
                 )}
                 {tarif.options && (
                   <div className="tarifContainer__description">
-                    <h4>Option de maintenance &#40;en supplément&#41; :</h4>
+                    <h4>Option de maintenance &#40;en option&#41; :</h4>
                     <p>{tarif.options}</p>
                   </div>
                 )}
