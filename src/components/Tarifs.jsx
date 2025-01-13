@@ -77,7 +77,7 @@ const Tarifs = () => {
                 )}
                 {tarif.options && (
                   <div className="tarifContainer__description">
-                    <h4>Option de maintenance &#40;en option&#41; :</h4>
+                    <h4>Option de maintenance; :</h4>
                     <p>{tarif.options}</p>
                   </div>
                 )}
