@@ -8,7 +8,7 @@ const apiKey = import.meta.env.VITE_API_KEY_PROJECT;
 
 const Project = () => {
   const [flippedCards, setFlippedCards] = useState([]);
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState("Création");
   const [projects, setProjects] = useState([]);
 
   const handleCardClick = (index) => {
