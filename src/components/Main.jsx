@@ -34,8 +34,7 @@ const Main = () => {
               web ?
               <br />
               <br />
-              Je vous propose un accompagnement sur mesure pour créer le site
-              qui vous ressemble.
+              J&apos;aide les indépendants et petites entreprises à se démarquer en ligne grâce à des sites modernes, rapides et écoresponsables.
               <br />
               <br />
               J&apos;analyse et optimise votre site web pour augmenter ses
