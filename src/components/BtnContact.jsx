@@ -20,7 +20,7 @@ const BtnContact = () => {
       </button>)}
       {isBulleVisible && (
         <div className="btnContact__bulle">
-          <a href="mailto:devstree.guillaume@gmail.com">
+          <a href="/#contact">
             <FontAwesomeIcon icon={faEnvelope} className="btnContact__icon" />
           </a>
           <a href="tel:+33788235392">
