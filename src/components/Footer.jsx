@@ -26,7 +26,6 @@ const Footer = () => {
       </ul>
 
       <div className="footer__info">
-        <p className="noneMobile">07 88 23 53 92</p>
         <p>&copy; 2025, DEV_STRÉE</p>
         <div id="ecoindex-badge" data-theme="dark"></div>
         <a href="https://bff.ecoindex.fr/redirect/?url=https://www.devstree.fr/" target="_blank">
