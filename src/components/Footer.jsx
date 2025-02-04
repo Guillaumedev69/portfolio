@@ -29,17 +29,9 @@ const Footer = () => {
 
       <div className="footer__info">
         <p className="noneMobile">07 88 23 53 92</p>
-        <a href="mailto:devstree.guillaume@gmail.com" className="noneMobile">
-          <p>devstree.guillaume@gmail.com</p>
-        </a>
-        <p>&copy; 2024, DEV_STRÉE</p>
-        <Link to="/auth">
-          <FontAwesomeIcon
-            className="btnSign"
-            icon={faUser}
-            title="connexion"
-          />
-        </Link>
+        <p>&copy; 2025, DEV_STRÉE</p>
+        <div id="ecoindex-badge" data-theme="dark"></div>
+        <script src="https://cdn.jsdelivr.net/gh/cnumr/ecoindex_badge@3/assets/js/ecoindex-badge.js" defer></script>
       </div>
     </footer>
   );
