@@ -34,7 +34,7 @@ const Main = () => {
               web ?
               <br />
               <br />
-              J&apos;aide les indépendants et petites entreprises à se démarquer en ligne grâce à des sites modernes, rapides et écoresponsables.
+              J&apos;aide les indépendants et petites entreprises à se démarquer en ligne grâce à des sites modernes, rapides et éco-responsables.
               <br />
               <br />
               J&apos;analyse et optimise votre site web pour augmenter ses
