@@ -6,7 +6,7 @@ import Project from "./Project";
 import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
-import BtnCv from "./BtnCv";
+import BtnRdv from "./BtnRdv";
 import Header from "./Header";
 import TextIntro from "./TextIntro";
 import EndSectionOne from "./EndSectionOne";
@@ -44,7 +44,7 @@ const Main = () => {
               <br />
             </p>
             <BtnContact />
-            <BtnCv />
+            <BtnRdv />
           </div>
           <img
             src={PhotoProfil}

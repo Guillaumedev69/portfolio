@@ -1,5 +1,6 @@
 @import "../index.scss";
 /* Extra small devices (phones, <576px) */
+
 @media (max-width: 575.98px) {
   .containerBulle {
     display: flex;
@@ -79,8 +80,6 @@
         color: $color3;
         font-size: 1.2rem;
       }
-      
-      
     }
   }
 }
@@ -91,8 +90,8 @@
 
 /* Large devices (desktops, ≥992px) */
 @media (min-width: 992px) {
-  .containerBulle{
-    .btnContact{
+  .containerBulle {
+    .btnContact {
       &__icon:hover {
         position: relative;
         top: 1px;
@@ -100,7 +99,6 @@
       }
     }
   }
-  
 }
 
 /* Extra large devices (large desktops, ≥1200px) */
