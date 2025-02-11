@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://destreeguillaume-devstree.fr/sitemap.xml
+Sitemap: https://devstree.fr/sitemap.xml
