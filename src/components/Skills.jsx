@@ -1,50 +1,44 @@
 import "../styles/Skills.scss";
-import { useEffect, useState } from "react";
-
-const apiUrl = import.meta.env.VITE_API_URL;
-const apiKey = import.meta.env.VITE_API_KEY_SKILL;
-
+import IconNext from "../assets/icons/nextjs-icon.svg";
+import IconSass from "../assets/icons/sass-icon.svg";
+import IconStrapi from "../assets/icons/strapi-icon.svg";
+import IconFigma from "../assets/icons/figma-icon.svg";
 const Skills = () => {
-  const [skills, setSkills] = useState([]);
-
-  useEffect(() => {
-    fetch(`${apiUrl}/api/skills?populate=*`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Réponse API skills :", data);
-        if (data && data.data) {
-          const formattedSkills = data.data.map((item) => ({
-            id: item.id,
-            ...item,
-          }))
-          .sort((a, b) => a.order - b.order);
-          setSkills(formattedSkills);
-        } else {
-          console.error("Format inattendu :", data);
-        }
-      })
-      .catch((err) => console.error("Erreur API :", err));
-  }, []);
-
   return (
     <div>
       <div className="skillsContainer">
-        {skills.map((skill) => (
-          <div className="skillsContainer__iconsTitleContain" key={skill.id}>
-            <img
-              className="skillsContainer__icons"
-              src={`${apiUrl}${skill.icons.url}`}
-              alt={`logo de ${skill.title}`}
-            />
-            <h3 className="skillsContainer__title">{skill.title}</h3>
-          </div>
-        ))}
+        <div className="skillsContainer__iconsTitleContain">
+          <img
+            className="skillsContainer__icons"
+            src={IconNext}
+            alt="logo du framework Next.js"
+          />
+          <h3 className="skillsContainer__title">Next.js</h3>
+        </div>
+        <div className="skillsContainer__iconsTitleContain">
+          <img
+            className="skillsContainer__icons"
+            src={IconStrapi}
+            alt="logo du framework Strapi"
+          />
+          <h3 className="skillsContainer__title">Strapi</h3>
+        </div>
+        <div className="skillsContainer__iconsTitleContain">
+          <img
+            className="skillsContainer__icons"
+            src={IconSass}
+            alt="logo de Sass"
+          />
+          <h3 className="skillsContainer__title">Sass</h3>
+        </div>
+        <div className="skillsContainer__iconsTitleContain">
+          <img
+            className="skillsContainer__icons"
+            src={IconFigma}
+            alt="icone du logiciel de design Figma"
+          />
+          <h3 className="skillsContainer__title">Figma</h3>
+        </div>
       </div>
     </div>
   );
