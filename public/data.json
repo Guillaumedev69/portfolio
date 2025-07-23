@@ -1,6 +1,7 @@
-[
+{
+  "projects":[
     {
-      "img": "ImgKasa",
+      "img": "imgKasa",
       "title": "Kasa - Location immobilière",
       "category": "Frontend",
       "description": "Projet: Intégration d'une maquette Figma avec React & SASS\nLes missions:\n- Création et implémentation de plusieurs pages\n- Utilisation de React-Router-Dom une navigation instantanée\n- Création de composants réutilisables\n- Gestion de la page 404 'Not Found' en fonction de l'identifiant dans la base de données",
@@ -9,7 +10,7 @@
       "linkProjet": "https://kasa-fr.vercel.app/"
     },
     {
-      "img": "ImgSophieBluel",
+      "img": "imgSophieBluel",
       "title": "Sophie Bluel - Portfolio en ligne",
       "category": "Frontend",
       "description": "Projet: Intégration d'une maquette Figma avec JavaScript & CSS.\nLes missions:\n- Création des modales d'affichage et de gestion de galerie\n- Gestion de la galerie avec une API CRUD (Ajouter, Afficher, Modifier ou Supprimer)",
@@ -18,7 +19,7 @@
       "linkProjet": ""
     },
     {
-      "img": "ImgBooki",
+      "img": "imgBooki",
       "title": "Booki - Agence de voyage",
       "category": "Frontend",
       "description": "Projet: Intégrer une maquette Figma en HTML & CSS\nLes missions:\n- Gestion du responsive design\n- Ajustement des différents éléments de la maquette en fonction des tailles d'écran",
@@ -27,7 +28,7 @@
       "linkProjet": "https://guillaumedev69.github.io/Booki_integration/"
     },
     {
-      "img": "ImgMonVieuxGrimoire",
+      "img": "imgMonVieuxGrimoire",
       "title": "Mon Vieux Grimoire - librairie",
       "category": "Backend",
       "description": "Projet: Création de la partie serveur et de la base de données d'une application web de notations de livres en Node.js\nLes missions:\n- Mise en service de la partie serveur\n- Création de la base de données et liaison avec l'application web\n- Gestion des éléments de la base de données (CRUD)\n- Création du système de notation des livres\n- Mise en place d'un système d'authentification client\n- Création d'un traitement d'image à l'importation",
@@ -36,7 +37,7 @@
       "linkProjet": ""
     },
     {
-      "img": "ImgTeumaMaquette",
+      "img": "imgTeumaMaquette",
       "title": "TEUMA SME - Cadre Externalisé",
       "category": "Création",
       "description": "Projet: Création d'un site professionelle pour un Cadre Externalisé en React& Sass\nLes missions:\n- Création d'une maquette sur Figma\n- Intégration de la maquette",
@@ -45,7 +46,7 @@
       "linkProjet": ""
     },
     {
-      "img": "ImgNinaCarducci",
+      "img": "imgResultatNinaCarducci",
       "title": "Nina CARDUCCI - Photographe Professionnel",
       "category": "Optimisation",
       "description": "Projet: Amélioration d'un portfolio d'une photographe\nLes missions:\n- Analyse et optimisation des performances, de l'accessibilité et du SEO\n- Correction de bugs impactant certaines fonctionnalités",
@@ -53,5 +54,54 @@
       "linkGithub": "https://github.com/Guillaumedev69/Nina_Carducci",
       "linkProjet": "https://guillaumedev69.github.io/Nina_Carducci/"
     }
+  ],
+  "tarifs": [
+    {
+      "id": 1,
+      "title": "Offre Starter : Site Vitrine",
+      "description": "Un site moderne, rapide et optimisé pour le SEO avec une gestion de contenu simple via un CMS headless.",
+      "details": "- 5 pages statiques (Accueil, À propos, Services, Contact, Mentions légales)\n- Gestion du contenu via Strapi (ou autre CMS headless open source)\n- Formulaire de contact (ex : Formspree ou Nodemailer)\n- SEO de base : balises méta, sitemap, URLs optimisées\n- Déploiement sur Vercel ou Netlify",
+      "tarif": "2 500€ HT",
+      "options": "- Maintenance : 80€/mois\n- Hébergement inclus\n- Support contenu : 1h d’assistance/mois\n- Suivi des performances et corrections mineures",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "title": "Offre Pro : Blog Dynamique",
+      "description": "Un blog performant avec des articles, catégories et optimisation SEO.",
+      "details": "- Inclut toutes les fonctionnalités de l’offre Starter\n- Système de blog avec catégories, tags, auteurs\n- Pagination et recherche d’articles\n- Rendu statique avec ISR (Incremental Static Regeneration)\n- SEO avancé pour chaque article\n- Intégration d’outils analytiques (Google Analytics, Matomo)\n- Design sur mesure (UI/UX)",
+      "tarif": "4 000€ HT",
+      "options": "- Maintenance : 120€/mois\n- Hébergement\n- Mises à jour CMS et front-end\n- Support technique : 2h/mois",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "title": "Offre E-commerce Headless",
+      "description": "Une boutique en ligne moderne, rapide et sécurisée avec back-office headless.",
+      "details": "- Gestion des produits et catégories via Strapi ou Shopify headless\n- Paiements via API (ex : Stripe)\n- Pages produit SEO (SSG/ISR)\n- Panier, checkout sécurisé\n- Filtres de recherche avancés\n- Design responsive sur mesure\n- Optimisation performance & SEO",
+      "tarif": "7 000€ – 10 000€ HT",
+      "options": "- Maintenance : 200€/mois\n- Hébergement\n- Suivi transactions & maintenance technique\n- Support contenu/produits : 3h/mois",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "title": "Offre Corporate + Fonctionnalités sur mesure",
+      "description": "Un site corporate évolutif avec des fonctionnalités avancées pour entreprises.",
+      "details": "- Inclut toutes les fonctionnalités de l’offre Pro\n- Intégration d’APIs externes : CRM, outils internes\n- Pages dynamiques personnalisées (SSR)\n- Authentification utilisateurs\n- Modules interactifs : formulaires, graphiques, dashboards\n- SEO avancé et optimisation des performances",
+      "tarif": "8 000€ – 15 000€ HT",
+      "options": "- Maintenance : 250€/mois\n- Support API/CRM\n- Monitoring & sécurisation\n- Mises à jour techniques et évolutions : 3h/mois",
+      "order": 4
+    },
+    {
+      "id": 5,
+      "title": "Offre Application Web / PWA",
+      "description": "Une application web interactive avec front-end réactif et gestion de contenu moderne.",
+      "details": "- Back-end headless CMS pour données dynamiques\n- Front-end interactif (Next.js)\n- Compatible PWA : fonctionnement offline, installation mobile/desktop\n- Fonctionnalités interactives : auth, dashboards\n- Design UI/UX sur mesure",
+      "tarif": "10 000€ – 20 000€ HT",
+      "options": "- Maintenance : 300€/mois\n- Support technique avancé\n- Évolution des fonctionnalités\n- Monitoring & corrections",
+      "order": 5
+    }
   ]
+}
+
   

@@ -22,9 +22,11 @@ const Project = () => {
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
-        setProjects(data);
+        setProjects(data.projects);
       })
-      .catch((err) => console.error("Erreur lors du chargement des projets :", err));
+      .catch((err) =>
+        console.error("Erreur lors du chargement des projets :", err)
+      );
   }, []);
 
   const filteredProjects =
@@ -40,7 +42,9 @@ const Project = () => {
         <div className="containerCards__carousel">
           {filteredProjects.map((project, index) => (
             <div
-              className={`cards ${flippedCards.includes(index) ? "flipped" : ""}`}
+              className={`cards ${
+                flippedCards.includes(index) ? "flipped" : ""
+              }`}
               key={index}
               onClick={() => handleCardClick(index)}
             >
@@ -59,10 +63,12 @@ const Project = () => {
                 <div className="inner">
                   <p className="backContent__P">{project.description}</p>
                   <div className="cardsIconsContainerLink">
-                  <div className="iconContainer">
+                    <div className="iconContainer">
                       {project.icons &&
                         project.icons.map((icon, iconIndex) => {
-                          const iconName = icon.replace("Icon", "").toLowerCase();
+                          const iconName = icon
+                            .replace("Icon", "")
+                            .toLowerCase();
                           return (
                             <img
                               className="cardsIcons"
@@ -81,7 +87,8 @@ const Project = () => {
                           rel="noopener noreferrer"
                           className="backContent__linkProjet"
                         >
-                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Voir le projet
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />{" "}
+                          Voir le projet
                         </a>
                       )}
                       {project.linkGithub && (
@@ -91,7 +98,8 @@ const Project = () => {
                           rel="noopener noreferrer"
                           className="backContent__linkGithub"
                         >
-                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Voir sur GitHub
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />{" "}
+                          Voir sur GitHub
                         </a>
                       )}
                     </div>
