@@ -78,7 +78,7 @@
       background-color: $color2;
       .skillsTitle {
         padding-bottom: 2rem;
-        color: $color1;
+        color: $color2;
       }
     }
     .sectionTarif{
@@ -86,7 +86,11 @@
       .tarifTitle {
         color: $color2;
         margin: 3rem 0;
-
+      }
+      #ecoP{
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        color: rgb(146, 194, 146);
       }
     }
     
@@ -220,6 +224,11 @@
         color: $color2;
         margin: 3rem 0;
         font-size: 2rem;
+      }
+      #ecoP{
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        color: rgb(146, 194, 146);
       }
     }
     .sectionContact {
@@ -453,6 +462,11 @@
         font-size: 2rem;
       }
     }
+    .sectionTarif{
+      #ecoP{
+font-size: 1.5rem;
+      }
+    }
     .sectionContact {
       display: flex;
       flex-direction: column;
@@ -602,6 +616,9 @@
       align-items: center;
       .tarifTitle{
         font-size: 2.5rem;
+      }
+      #ecoP{
+font-size: 2rem;
       }
     }
     .sectionContact {

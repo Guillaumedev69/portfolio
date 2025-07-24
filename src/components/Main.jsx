@@ -14,6 +14,7 @@ import EndSectionTwo from "./EndSectionTwo";
 import EndSectionThree from "./EndSectionThree";
 import EndSectionFour from "./EndSectionFour";
 import Tarifs from "./Tarifs";
+import { faPagelines } from "@fortawesome/free-brands-svg-icons";
 
 const Main = () => {
   return (
@@ -66,6 +67,7 @@ const Main = () => {
       </section>
       <section className="sectionTarif" id="tarif">
         <h2 className="tarifTitle">TARIFS</h2>
+        <p id="ecoP"><FontAwesomeIcon className="greenIcon" icon={faPagelines}/> Toutes les créations de site sont réalisées de manière écoresponsable <FontAwesomeIcon className="greenIcon" icon={faPagelines}/></p>
         <Tarifs/>
       </section>
       <section className="sectionContact" id="contact">

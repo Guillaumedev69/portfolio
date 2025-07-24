@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import "../styles/Tarifs.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPagelines } from "@fortawesome/free-brands-svg-icons";
+
 
 const Tarifs = () => {
   const [tarifs, setTarifs] = useState([]);
@@ -31,7 +34,7 @@ const Tarifs = () => {
 
         return (
           <div className="tarifContainer__cards" key={tarif.id}>
-            <h3 className="tarifContainer__title">{tarif.title}</h3>
+            <h3 className="tarifContainer__title"><FontAwesomeIcon className="greenIcon" icon={faPagelines}/> {tarif.title}</h3>
             <p className="tarifContainer__description">{tarif.description}</p>
             {tarif.tarif && (
               <h4 className="tarifContainer__price">
