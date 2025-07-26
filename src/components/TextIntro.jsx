@@ -1,16 +1,13 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import "../styles/TextIntro.scss";
 
 const TextIntro = () => {
   useEffect(() => {
-    consoleText(
-      ["Site web éco-responsable","Demandez votre audit !"],
-      "text",
-    );
+    consoleText(["Site web éco-responsable", "Demandez votre audit !"], "text");
   }, []);
 
   const consoleText = (words, id, colors) => {
-    if (colors === undefined) colors = ["#E8eacc"];
+    if (colors === undefined) colors = ["#fff"];
     let visible = true;
     const con = document.getElementById("console");
     let letterCount = 1;

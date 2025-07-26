@@ -3,7 +3,7 @@ import "../styles/Filter.scss"
 import PropTypes from "prop-types";
 
 const Filter = ({ selectedCategory, setFilter }) => {
-  const categories = ["All", "Frontend", "Backend", "Création", "Optimisation"];
+  const categories = ["All", "Frontend", "Création", "Optimisation"];
 
   return (
     <div className="filterContainer">

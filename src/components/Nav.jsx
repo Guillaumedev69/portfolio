@@ -59,7 +59,7 @@ const Nav = () => {
               </li>
             </a>
             <a
-              href="https://www.linkedin.com/in/guillaume-destr%C3%A9e/"
+              href="https://linkedin.com/in/guillaumedestree"
               target="blank"
               className="navLink"
             >

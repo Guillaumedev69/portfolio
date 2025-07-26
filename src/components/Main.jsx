@@ -6,7 +6,7 @@ import Project from "./Project";
 import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
-import BtnRdv from "./BtnRdv";
+/*import BtnRdv from "./BtnRdv";*/
 import Header from "./Header";
 import TextIntro from "./TextIntro";
 import EndSectionOne from "./EndSectionOne";
@@ -45,7 +45,6 @@ const Main = () => {
               <br />
             </p>
             <BtnContact />
-            <BtnRdv />
           </div>
           <img
             src={PhotoProfil}
@@ -67,7 +66,7 @@ const Main = () => {
       </section>
       <section className="sectionTarif" id="tarif">
         <h2 className="tarifTitle">TARIFS</h2>
-        <p id="ecoP"><FontAwesomeIcon className="greenIcon" icon={faPagelines}/> Toutes les créations de site sont réalisées de manière écoresponsable <FontAwesomeIcon className="greenIcon" icon={faPagelines}/></p>
+        <p id="ecoP"><FontAwesomeIcon className="greenIcon" icon={faPagelines}/> Chaque site est conçu avec une approche écoresponsable : rapide, léger et durable. <FontAwesomeIcon className="greenIcon" icon={faPagelines}/></p>
         <Tarifs/>
       </section>
       <section className="sectionContact" id="contact">

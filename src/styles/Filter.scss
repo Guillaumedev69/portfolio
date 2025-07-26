@@ -15,14 +15,16 @@
     color: $color4;
     font-size: 1.4rem;
     font-family: "cuprum";
-        box-shadow: 2px 2px 0px 2px $color2;
+    box-shadow: 2px 2px 0px 2px $color2;
   }
   button:hover {
     background-color: $color1;
     color: $color4;
   }
   button.active {
-    background-color: $color1;
-    color: $color4;
+    background-color: $color3;
+    border: 3px solid $color2;
+    box-shadow: 2px 2px 0px 4px $color4;
+    color: $color2;
   }
 }
